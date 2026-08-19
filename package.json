@@ -2,7 +2,6 @@
   "name": "magma",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://junaid212.github.io/magma",
   "dependencies": {
     "bootstrap": "^5.3.2",
     "gsap": "^3.12.5",
