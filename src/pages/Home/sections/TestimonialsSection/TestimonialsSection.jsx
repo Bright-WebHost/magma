@@ -86,10 +86,10 @@ const TestimonialsSection = () => {
             </p>
             <div className={styles.quoteIcon} ref={quoteIconRef}>
               <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <text x="0" y="55" fontSize="80" fontFamily="serif" fill="none" stroke="#FF481F" strokeWidth="2">
+                <text x="0" y="55" fontSize="80" fontFamily="serif" fill="none" stroke="#0B7887" strokeWidth="2">
                   "
                 </text>
-                <text x="42" y="55" fontSize="80" fontFamily="serif" fill="none" stroke="#FF481F" strokeWidth="2">
+                <text x="42" y="55" fontSize="80" fontFamily="serif" fill="none" stroke="#0B7887" strokeWidth="2">
                   "
                 </text>
               </svg>
@@ -154,13 +154,13 @@ const TestimonialsSection = () => {
         <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M150 20 C 80 60, 30 120, 60 200 C 80 260, 40 310, 60 370"
-            stroke="#FF481F"
+            stroke="#0B7887"
             strokeWidth="1.5"
             fill="none"
           />
           <path
             d="M60 200 C 30 220, 20 260, 50 280"
-            stroke="#FF481F"
+            stroke="#0B7887"
             strokeWidth="1.5"
             fill="none"
           />

@@ -1,11 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import styles from './AboutSection.module.scss';
 import aboutImg from '../../../../assets/images/img/3.webp';
 import { ArrowUpRight, MoveUpRight } from 'lucide-react';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
@@ -106,14 +108,14 @@ const AboutSection = () => {
           {/* Main sweeping arc from top right, through image center to bottom left */}
           <path
             d="M1430 10 C 1200 60, 950 80, 780 160 C 620 240, 560 350, 480 420 C 400 490, 300 500, 100 540"
-            stroke="#FF481F"
+            stroke="#0B7887"
             strokeWidth="1.8"
             fill="none"
           />
           {/* Small loop/oval near the bottom of the image */}
           <path
             d="M 510 460 C 490 510, 545 560, 595 545 C 645 530, 620 590, 575 610"
-            stroke="#FF481F"
+            stroke="#0B7887"
             strokeWidth="1.8"
             fill="none"
           />
@@ -134,7 +136,7 @@ const AboutSection = () => {
               <p className={styles.statLabel}>
                 YEARS OF<br />EXPERIENCE
               </p>
-              <span className={styles.statNumber}>15</span>
+              <span className={styles.statNumber}>70<em style={{fontSize:'28px', fontWeight:400}}>+</em></span>
             </div>
           </div>
 
@@ -151,15 +153,15 @@ const AboutSection = () => {
 
           {/* Right: Text content */}
           <div className={styles.rightCol} ref={textRef}>
-            <h2 className={styles.estTitle}>Est. 1986</h2>
+            <h2 className={styles.estTitle}>Est. 1953</h2>
             <p className={styles.desc}>
-              Archin Studio is an archiectural practice based in
-              Boston. We cut ourteeth on designing and
-              creating buildings that are both beautiful and
-              sustainable.
+              {t('who_we_are.p1')}
+            </p>
+            <p className={styles.desc}>
+              {t('who_we_are.p2')}
             </p>
             <Link to="/about" className={styles.studioBtn}>
-              Our Studio <ArrowUpRight strokeWidth={0.75} />
+              {t('navbar.about', 'About Us')} <ArrowUpRight strokeWidth={0.75} />
             </Link>
           </div>
         </div>

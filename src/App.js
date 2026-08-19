@@ -5,7 +5,6 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Products from './pages/Products/Products';
 import Projects from './pages/Projects/Projects';
-import Blog from './pages/Blog/Blog';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import Customization from './pages/Customization/Customization';
@@ -23,7 +22,6 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="blog" element={<Blog />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="customization" element={<Customization />} />

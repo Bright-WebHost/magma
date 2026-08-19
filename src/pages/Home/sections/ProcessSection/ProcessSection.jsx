@@ -162,7 +162,7 @@ const ProcessSection = () => {
               <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M50 100 C 150 50, 250 100, 280 200 C 310 300, 250 400, 150 430 C 100 450, 50 420, 80 380 C 120 330, 180 350, 170 300"
-                  stroke="#FF481F"
+                  stroke="#0B7887"
                   strokeWidth="1.5"
                   fill="none"
                 />

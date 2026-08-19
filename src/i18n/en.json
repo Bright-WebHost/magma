@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "projects": "Projects",
+    "blog": "Blog",
+    "pages": "Pages",
+    "services": "Services",
+    "customization": "Customization",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "MAGMA",
+    "subtitle": "A heritage built over more than 70 years of experience in the stone industry."
+  },
+  "about": {
+    "title": "About Magma",
+    "description_1": "Magma is a company specialized in the stone industry, with a heritage built over more than 70 years of experience. Throughout the decades, we have developed extensive expertise in the selection, processing, supply, and installation of natural stone and premium materials.",
+    "description_2": "In 2019, Magma established its presence in Côte d’Ivoire, bringing its long-standing experience and knowledge of the stone industry to the local market. Since then, we have been committed to delivering high-quality stone solutions for residential, commercial, and hospitality projects.",
+    "description_3": "Our work is driven by a passion for natural stone, attention to detail, quality craftsmanship, and a commitment to meeting the specific needs of every client and project."
+  },
+  "who_we_are": {
+    "title": "Who We Are",
+    "p1": "Magma is a vertically integrated company specialized in the stone and surface industry. From sourcing materials directly from quarries to the final installation, we manage every stage of the process with expertise, precision, and attention to detail.",
+    "p2": "Our capabilities include the supply, manufacturing, processing, and installation of natural stone and premium surface materials. This integrated approach allows us to maintain high standards of quality and control throughout every project, from the selection of the material to the final finish.",
+    "p3": "We work with a wide range of materials, including natural stone, marble, granite, ceramic slabs, quartz resin, and terrazzo. By combining traditional craftsmanship with modern techniques and high-end finishing, we provide tailored solutions for residential, commercial, hospitality, and architectural projects.",
+    "p4": "Our team works closely with clients, architects, designers, and contractors to understand each project's requirements and deliver solutions that combine functionality, durability, and exceptional aesthetics.",
+    "p5": "From the quarry to the finished project, Magma brings experience, craftsmanship, and quality to every surface we create."
+  },
+  "history": {
+    "title": "Company Story & History",
+    "p1": "Magma’s story began in 1953 in Beirut, Lebanon, when our great-grandfather founded the company and laid the foundations of a family business built around natural stone and craftsmanship.",
+    "p2": "Over the following decades, the business continued to grow from one generation to the next. Under the leadership of our grandfather and later his sons, Magma expanded its presence across the Middle East and internationally, establishing operations and business activities in countries including Kuwait, the United Arab Emirates, Oman, Qatar, Saudi Arabia, and the United States.",
+    "p3": "After more than seven decades of experience in the stone industry, we identified Africa as a region with strong potential for growth and development. In 2019, Magma established its presence in Côte d’Ivoire, marking a new chapter in the company's history and expanding our family heritage into the African market.",
+    "p4": "Today, Magma combines three generations of family experience with an international vision, offering expertise in natural stone and a commitment to quality, craftsmanship, and long-term relationships with our clients and partners."
+  },
+  "experience": {
+    "title": "Our Experience & Projects",
+    "p1": "Since establishing our presence in Côte d’Ivoire in 2019, Magma has successfully completed more than 10,000 projects across the country.",
+    "p2": "Our experience covers a wide range of sectors, including residential properties, restaurants, hotels, commercial buildings, and major architectural projects. We have also had the privilege of contributing to prestigious projects such as the Presidential Lounge at the airport.",
+    "p3": "Each project reflects our commitment to quality, precision, and client satisfaction. Our work has allowed us to build strong relationships with our clients and establish a reputation for delivering high-quality materials, exceptional craftsmanship, and high-end finishes.",
+    "p4": "From private residences to large-scale commercial and hospitality projects, Magma brings the same level of professionalism, attention to detail, and dedication to every project."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "p1": "To become Africa’s leading reference in the stone and surface industry by combining more than seven decades of family heritage with innovation, craftsmanship, and uncompromising quality.",
+    "p2": "Our vision is to bring world-class expertise and premium stone solutions to the African market, while continuously expanding our capabilities and setting new standards in the sourcing, manufacturing, processing, and installation of natural and engineered surfaces.",
+    "p3": "We aim to be the trusted partner of choice for architects, designers, developers, contractors, and clients who seek exceptional materials, outstanding craftsmanship, and complete solutions—from quarry to installation."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "p1": "At Magma, our mission is to transform natural and engineered surfaces into exceptional spaces through expertise, craftsmanship, and innovation.",
+    "p2": "From sourcing materials from quarries to manufacturing, processing, and final installation, we manage every stage of the process to deliver complete, high-quality solutions tailored to the needs of each project.",
+    "p3": "We are committed to providing our clients with premium materials, precise workmanship, high-end finishes, and reliable service. By combining more than 70 years of family experience with modern techniques and an international perspective, we strive to exceed expectations and create lasting value in every project we undertake.",
+    "p4": "Our mission is to make exceptional stone and surface solutions accessible across Africa while building lasting relationships with our clients, partners, and the communities in which we operate."
+  },
+  "values": {
+    "title": "Company Values",
+    "items": [
+      {
+        "name": "Quality",
+        "desc": "We are committed to delivering high-quality materials and workmanship."
+      },
+      {
+        "name": "Craftsmanship",
+        "desc": "We combine experience, precision, and attention to detail in every project."
+      },
+      {
+        "name": "Integrity",
+        "desc": "We build lasting relationships through honesty, transparency, and professionalism."
+      },
+      {
+        "name": "Reliability",
+        "desc": "We strive to deliver on our commitments and provide dependable service."
+      },
+      {
+        "name": "Innovation",
+        "desc": "We continuously explore new materials, techniques, and solutions."
+      },
+      {
+        "name": "Customer Satisfaction",
+        "desc": "We work closely with our clients to understand their needs and bring their vision to life."
+      }
+    ]
+  }
+}

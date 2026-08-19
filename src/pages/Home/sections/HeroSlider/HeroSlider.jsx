@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, EffectFade } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -11,28 +12,24 @@ import img2 from '../../../../assets/images/img/2.webp';
 import { LuMoveUpRight } from 'react-icons/lu';
 import { MoveUpRight } from 'lucide-react';
 
-const slides = [
-  {
-    id: 1,
-    bg: img1,
-    title: 'magma',
-    subtitle: 'Architecture Design Studio',
-  },
-  {
-    id: 2,
-    bg: img2,
-    title: 'magma',
-    subtitle: 'Architecture Language Signature',
-  },
-  // {
-  //   id: 3,
-  //   bg: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80',
-  //   title: 'time',
-  //   subtitle: 'Sustainable Material Resource',
-  // },
-];
-
 const HeroSlider = () => {
+  const { t } = useTranslation();
+
+  const slides = [
+    {
+      id: 1,
+      bg: img1,
+      title: t('hero.title', 'MAGMA'),
+      subtitle: t('hero.subtitle', 'A heritage built over more than 70 years of experience in the stone industry.'),
+    },
+    {
+      id: 2,
+      bg: img2,
+      title: t('hero.title', 'MAGMA'),
+      subtitle: t('hero.subtitle', 'A heritage built over more than 70 years of experience in the stone industry.'),
+    },
+  ];
+
   const sectionRef = useRef(null);
   const counterRef = useRef(null);
   const titleRef = useRef(null);
@@ -145,16 +142,14 @@ const HeroSlider = () => {
                   {/* Right content - description + CTA */}
                   <div className={styles.rightContent}>
                     <p className={styles.slideDesc} ref={descRef}>
-                      We collaborate with clients to create buildings and environments in
-                      dialogue with culture and place. And become one of the country's leading
-                      architectural practices
+                      {t('about.description_1')}
                     </p>
                     <Link
-                      to="/blog"
+                      to="/about"
                       className={styles.ctaBtn}
                       ref={ctaRef}
                     >
-                      Our Services <MoveUpRight strokeWidth={0.75} />
+                      {t('navbar.about', 'About')} <MoveUpRight strokeWidth={0.75} />
                     </Link>
                   </div>
                 </div>

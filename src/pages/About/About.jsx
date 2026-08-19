@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './About.module.scss';
@@ -18,7 +19,7 @@ const coreValues = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-          stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
   },
@@ -29,9 +30,9 @@ const coreValues = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-          stroke="#FF481F" strokeWidth="1.5"/>
+          stroke="#0B7887" strokeWidth="1.5"/>
         <path d="M2 12H22M12 2C9.33333 6 8 9 8 12C8 15 9.33333 18 12 22C14.6667 18 16 15 16 12C16 9 14.6667 6 12 2Z"
-          stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+          stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -42,12 +43,12 @@ const coreValues = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
-          stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="9" cy="7" r="4" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="9" cy="7" r="4" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
-          stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
-          stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
   },
@@ -57,8 +58,8 @@ const coreValues = [
     desc: 'We create spaces that endure — aesthetically and structurally — for generations to come.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" stroke="#FF481F" strokeWidth="1.5"/>
-        <polyline points="12,6 12,12 16,14" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#0B7887" strokeWidth="1.5"/>
+        <polyline points="12,6 12,12 16,14" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
   },
@@ -67,6 +68,7 @@ const coreValues = [
 // ─── Component ───────────────────────────────────────────────
 
 const About = () => {
+  const { t } = useTranslation();
   const heroRef        = useRef(null);
   const heroInnerRef   = useRef(null);
   const aboutRef       = useRef(null);
@@ -280,12 +282,11 @@ const About = () => {
 
             {/* <p className={styles.heroLabel}>Our Story</p> */}
             <h1 className={styles.heroTitle}>
-              About MAGMA
+              {t('about.title', 'About MAGMA')}
             </h1>
-            {/* <p className={styles.heroSubtitle}>
-              A heritage of excellence in natural stone — from quarry to installation,
-              we bring precision, beauty, and permanence to every space we touch.
-            </p> */}
+            <p className={styles.heroSubtitle}>
+              {t('hero.subtitle')}
+            </p>
           </div>
         </div>
 
@@ -305,11 +306,11 @@ const About = () => {
           <svg viewBox="0 0 1440 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path
               d="M1430 10 C 1200 60, 950 80, 780 160 C 620 240, 560 350, 480 420 C 400 490, 300 500, 100 540"
-              stroke="#FF481F" strokeWidth="1.5" fill="none" opacity="0.35"
+              stroke="#0B7887" strokeWidth="1.5" fill="none" opacity="0.35"
             />
             <path
               d="M 510 460 C 490 510, 545 560, 595 545 C 645 530, 620 590, 575 610"
-              stroke="#FF481F" strokeWidth="1.5" fill="none" opacity="0.35"
+              stroke="#0B7887" strokeWidth="1.5" fill="none" opacity="0.35"
             />
           </svg>
         </div>
@@ -327,7 +328,7 @@ const About = () => {
               </div>
               {/* Floating card */}
               <div className={styles.floatingCard}>
-                <span className={styles.floatNumber}>15<em style={{fontSize:'28px', fontWeight:400}}>+</em></span>
+                <span className={styles.floatNumber}>70<em style={{fontSize:'28px', fontWeight:400}}>+</em></span>
                 <span className={styles.floatLabel}>Years of<br/>Excellence</span>
               </div>
             </div>
@@ -336,36 +337,30 @@ const About = () => {
             <div className={styles.aboutTextSide} ref={textRef}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Who We Are</span>
+                <span className={styles.metaLabel}>{t('who_we_are.title')}</span>
               </div>
 
               <h2 className={styles.aboutHeading}>
-                Transforming Natural Stone Into Living Masterpieces
+                {t('history.title')}
               </h2>
 
               <p className={styles.aboutLead}>
-                Founded on a deep reverence for natural materials, Magma Stone has been
-                crafting bespoke marble and stone solutions for residential and commercial
-                spaces since 2009.
+                {t('history.p1')}
               </p>
 
               <p className={styles.aboutBody}>
-                Every project we undertake is treated as a work of art. Our team of skilled
-                artisans and designers collaborate closely with clients to deliver surfaces
-                that are not only visually stunning but built to endure for generations.
-                From Italian Carrara to rare Onyx, we source the world's finest stone and
-                shape it with uncompromising precision.
+                {t('history.p2')}
+              </p>
+
+              <p className={styles.aboutBody}>
+                {t('history.p3')}
               </p>
 
               {/* Stats */}
               <div className={styles.statsRow} ref={statsRef}>
                 <div className={styles.statItem}>
-                  <span className={styles.statNum}>850<em>+</em></span>
+                  <span className={styles.statNum}>10,000<em>+</em></span>
                   <span className={styles.statText}>Projects Completed</span>
-                </div>
-                <div className={styles.statItem}>
-                  <span className={styles.statNum}>40<em>+</em></span>
-                  <span className={styles.statText}>Stone Varieties</span>
                 </div>
               </div>
 
@@ -386,27 +381,27 @@ const About = () => {
           <div className={styles.valuesGrid}>
             <div className={styles.valueItem}>
               <div className={styles.valueIcon}>
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 17L12 22L22 17" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 12L12 17L22 12" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 17L12 22L22 17" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 12L12 17L22 12" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
-              <span className={styles.valueBig}>850<em>+</em></span>
+              <span className={styles.valueBig}>10,000<em>+</em></span>
               <span className={styles.valueTitle}>Projects Delivered</span>
-              <p className={styles.valueDesc}>From intimate bathrooms to grand hotel lobbies — every project exceeds expectations.</p>
+              <p className={styles.valueDesc}>From private residences to large-scale commercial and hospitality projects.</p>
             </div>
             <div className={styles.valueItem}>
               <div className={styles.valueIcon}>
-                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#FF481F" strokeWidth="1.5"/><path d="M12 8V12L15 15" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#0B7887" strokeWidth="1.5"/><path d="M12 8V12L15 15" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
-              <span className={styles.valueBig}>15<em>+</em></span>
+              <span className={styles.valueBig}>70<em>+</em></span>
               <span className={styles.valueTitle}>Years of Experience</span>
-              <p className={styles.valueDesc}>A decade and a half of mastering stone — our expertise runs as deep as the quarry.</p>
+              <p className={styles.valueDesc}>Heritage built over decades of experience in the stone industry.</p>
             </div>
             <div className={styles.valueItem}>
               <div className={styles.valueIcon}>
-                <svg viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/><circle cx="9" cy="7" r="4" stroke="#FF481F" strokeWidth="1.5"/><path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/><path d="M16 3.13C17.7699 3.58317 19.0078 5.17822 19.0078 7.005C19.0078 8.83178 17.7699 10.4268 16 10.88" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/><circle cx="9" cy="7" r="4" stroke="#0B7887" strokeWidth="1.5"/><path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/><path d="M16 3.13C17.7699 3.58317 19.0078 5.17822 19.0078 7.005C19.0078 8.83178 17.7699 10.4268 16 10.88" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
-              <span className={styles.valueBig}>200<em>+</em></span>
-              <span className={styles.valueTitle}>Happy Clients</span>
-              <p className={styles.valueDesc}>Trust built one polished surface at a time — our clients return, and they refer.</p>
+              <span className={styles.valueBig}>3</span>
+              <span className={styles.valueTitle}>Generations</span>
+              <p className={styles.valueDesc}>Three generations of family experience with an international vision.</p>
             </div>
           </div>
         </div>
@@ -421,10 +416,10 @@ const About = () => {
           {/* Header */}
           <div className={styles.mvHeader} ref={mvHeaderRef}>
             <p className={styles.mvLabel}>Purpose & Direction</p>
-            {/* <h2 className={styles.mvTitle}>Mission & Vision</h2>
+            <h2 className={styles.mvTitle}>Mission & Vision</h2>
             <p className={styles.mvSubtitle}>
               Two pillars that guide every decision, every design, and every stone we lay.
-            </p> */}
+            </p>
           </div>
 
           {/* Mission + Vision cards */}
@@ -434,7 +429,7 @@ const About = () => {
               className={styles.mvCard}
               ref={(el) => (mvCardsRef.current[0] = el)}
             >
-              <div className={styles.mvCardBg}>
+              <div className={styles.mvCardImage}>
                 <img
                   src={missionImg}
                   alt="Mission — precision stone craftsmanship"
@@ -443,31 +438,26 @@ const About = () => {
               <div className={styles.mvCardContent}>
                 <div className={styles.mvCardTag}>
                   <span className={styles.mvTagDot} />
-                  <span className={styles.mvTagText}>Our Mission</span>
+                  <span className={styles.mvTagText}>{t('mission.title')}</span>
                 </div>
                 <h3 className={styles.mvCardTitle}>
-                  To Elevate Every Space With Natural Beauty
+                  {t('mission.p1')}
                 </h3>
                 <p className={styles.mvCardBody}>
-                  Our mission is to deliver stone solutions of exceptional quality that
-                  transform environments into timeless experiences — serving clients with
-                  integrity, precision, and unmatched craftsmanship.
+                  {t('mission.p2')}
                 </p>
-                {/* <ul className={styles.mvCardPoints}>
-                  <li>Source the world's finest natural stone</li>
-                  <li>Deliver precision-crafted bespoke solutions</li>
-                  <li>Build lasting relationships through trust</li>
-                  <li>Exceed client expectations on every project</li>
-                </ul> */}
+                <p className={styles.mvCardBody}>
+                  {t('mission.p3')}
+                </p>
               </div>
             </div>
 
             {/* Vision */}
             <div
-              className={styles.mvCard}
+              className={`${styles.mvCard} ${styles.mvCardReverse}`}
               ref={(el) => (mvCardsRef.current[1] = el)}
             >
-              <div className={styles.mvCardBg}>
+              <div className={styles.mvCardImage}>
                 <img
                   src={visionImg}
                   alt="Vision — future of stone design"
@@ -476,36 +466,33 @@ const About = () => {
               <div className={styles.mvCardContent}>
                 <div className={styles.mvCardTag}>
                   <span className={styles.mvTagDot} />
-                  <span className={styles.mvTagText}>Our Vision</span>
+                  <span className={styles.mvTagText}>{t('vision.title')}</span>
                 </div>
                 <h3 className={styles.mvCardTitle}>
-                  To Be The Global Standard In Stone Excellence
+                  {t('vision.p1')}
                 </h3>
                 <p className={styles.mvCardBody}>
-                  We envision a world where the art of stone craftsmanship is celebrated
-                  as a living heritage — a future where every home and commercial space
-                  carries the fingerprint of nature's finest materials.
+                  {t('vision.p2')}
                 </p>
-                {/* <ul className={styles.mvCardPoints}>
-                  <li>Pioneer sustainable sourcing practices</li>
-                  <li>Redefine luxury through natural materials</li>
-                  <li>Inspire the next generation of craftsmen</li>
-                  <li>Become the benchmark of global stone design</li>
-                </ul> */}
+                <p className={styles.mvCardBody}>
+                  {t('vision.p3')}
+                </p>
               </div>
             </div>
           </div>
 
           {/* Core Values cards */}
           <div className={styles.valuesCards}>
-            {coreValues.map((v, i) => (
+            {(t('values.items', { returnObjects: true }) || []).map((v, i) => (
               <div
-                key={v.id}
+                key={i}
                 className={styles.valueCard}
                 ref={(el) => (coreCardsRef.current[i] = el)}
               >
-                <div className={styles.valueCardIcon}>{v.icon}</div>
-                <h4 className={styles.valueCardTitle}>{v.title}</h4>
+                <div className={styles.valueCardIcon}>
+                  {coreValues[i % coreValues.length].icon}
+                </div>
+                <h4 className={styles.valueCardTitle}>{v.name}</h4>
                 <p className={styles.valueCardDesc}>{v.desc}</p>
               </div>
             ))}

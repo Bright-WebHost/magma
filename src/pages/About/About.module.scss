@@ -414,7 +414,7 @@
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: $breakpoint-md) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -452,12 +452,14 @@
   }
 
   @media (max-width: $breakpoint-md) {
-    border-right: none;
-    border-bottom: 1px solid rgba($color-white, 0.07);
-    padding: 44px 32px;
+    border-right: 1px solid rgba($color-white, 0.07);
+    border-bottom: none;
+    padding: 20px 10px;
+    align-items: center;
+    text-align: center;
 
     &:last-child {
-      border-bottom: none;
+      border-right: none;
     }
   }
 }
@@ -470,6 +472,15 @@
   svg {
     width: 32px;
     height: 32px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -485,6 +496,11 @@
     font-style: normal;
     color: $color-orange;
   }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
 }
 
 .valueTitle {
@@ -493,6 +509,11 @@
   font-weight: 600;
   color: $color-white;
   letter-spacing: -0.2px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
 
 .valueDesc {
@@ -500,6 +521,10 @@
   font-size: 13px;
   line-height: 1.7;
   color: rgba($color-white, 0.45);
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
 }
 
 // ============================================================
@@ -507,7 +532,7 @@
 // ============================================================
 
 .missionSection {
-  background-color: $color-white;
+  background-color: $color-beige;
   padding: 110px 0;
   position: relative;
   overflow: hidden;
@@ -558,33 +583,41 @@
 
 // Mission / Vision card grid — 2 col
 .mvGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  margin-bottom: 80px;
-
-  @media (max-width: $breakpoint-md) {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 100px;
 }
 
 .mvCard {
-  position: relative;
-  overflow: hidden;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 
-  @media (max-width: $breakpoint-sm) {
-    min-height: 380px;
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
-.mvCardBg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+.mvCardReverse {
+  @media (min-width: 993px) {
+    .mvCardImage {
+      order: 2;
+    }
+    .mvCardContent {
+      order: 1;
+    }
+  }
+}
+
+.mvCardImage {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
 
   img {
     width: 100%;
@@ -594,31 +627,19 @@
     transition: transform 0.7s ease;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba($color-dark, 0.92) 0%,
-      rgba($color-dark, 0.35) 60%,
-      transparent 100%
-    );
+  @media (max-width: $breakpoint-sm) {
+    height: 300px;
   }
 }
 
-.mvCard:hover .mvCardBg img {
-  transform: scale(1.06);
+.mvCard:hover .mvCardImage img {
+  transform: scale(1.04);
 }
 
 .mvCardContent {
-  position: relative;
-  z-index: 2;
-  padding: 50px 44px;
-
-  @media (max-width: $breakpoint-sm) {
-    padding: 36px 28px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mvCardTag {
@@ -646,22 +667,25 @@
 }
 
 .mvCardTitle {
-  // font-family: $font-serif;
-  font-size: clamp(32px, 3.5vw, 40px);
+  font-family: $font-sans;
+  font-size: 24px;
   font-weight: 600;
-  color: $color-white;
-  line-height: 1.1;
-  margin: 0 0 18px;
+  color: $color-dark;
+  line-height: 1.4;
+  margin: 0 0 24px;
   letter-spacing: -0.3px;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 20px;
+  }
 }
 
 .mvCardBody {
   font-family: $font-sans;
-  font-size: 14px;
-  line-height: 1.85;
-  color: rgba($color-white, 0.7);
-  margin: 0 0 28px;
-  max-width: 420px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba($color-dark, 0.7);
+  margin: 0 0 20px;
 }
 
 .mvCardPoints {
@@ -695,13 +719,16 @@
 // Core Values card row — below mission/vision
 .valuesCards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0;
   border: 1px solid rgba($color-dark, 0.1);
   border-radius: 16px;
   overflow: hidden;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $breakpoint-md) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media (max-width: $breakpoint-sm) {
@@ -710,7 +737,7 @@
 }
 
 .valueCard {
-  padding: 44px 36px;
+  padding: 30px 20px;
   border-right: 1px solid rgba($color-dark, 0.1);
   display: flex;
   flex-direction: column;
@@ -732,22 +759,26 @@
     }
   }
 
-  @media (max-width: $breakpoint-lg) {
-    &:nth-child(2) {
+  @media (max-width: $breakpoint-xl) {
+    &:nth-child(3n) {
       border-right: none;
+    }
+    &:nth-child(n + 4) {
+      border-top: 1px solid rgba($color-dark, 0.1);
+    }
+  }
+  @media (max-width: $breakpoint-md) {
+    border-right: 1px solid rgba($color-dark, 0.1) !important;
+    &:nth-child(even) {
+      border-right: none !important;
     }
     &:nth-child(n + 3) {
       border-top: 1px solid rgba($color-dark, 0.1);
     }
-    &:nth-child(3) {
-      border-right: 1px solid rgba($color-dark, 0.1);
-    }
-    &:nth-child(4) {
-      border-right: none;
-    }
   }
   @media (max-width: $breakpoint-sm) {
-    border-right: none;
+    border-right: none !important;
+    border-top: none !important;
     border-bottom: 1px solid rgba($color-dark, 0.1);
 
     &:last-child {
@@ -773,7 +804,7 @@
 
 .valueCardTitle {
   font-family: $font-sans;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   color: $color-dark;
   letter-spacing: -0.2px;
@@ -782,8 +813,8 @@
 
 .valueCardDesc {
   font-family: $font-sans;
-  font-size: 13px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.6;
   color: $color-gray-medium;
   margin: 0;
 }
@@ -857,7 +888,7 @@
   flex-shrink: 0;
 
   &:hover {
-    background: darken(#FF481F, 10%);
+    background: darken(#0B7887, 10%);
     color: $color-white;
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba($color-orange, 0.35);

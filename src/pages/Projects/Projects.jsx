@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './Projects.module.scss';
@@ -19,10 +20,10 @@ const filterTabs = ['All', 'Residential', 'Commercial', 'Hospitality', 'Restorat
 const projects = [
   {
     id: 1,
-    title: 'Sentido Touch Panel',
-    subtitle: 'Brushed metal keypad with soft-glow icons',
-    badge: 'BASALTE',
-    price: '$1,200',
+    title: 'Residential Villa',
+    subtitle: 'Custom marble flooring and staircase',
+    badge: 'RESIDENTIAL',
+    price: null,
     poa: false,
     image: img1,
     categories: ['All', 'Residential'],
@@ -30,21 +31,21 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Sentido Touch Panel',
-    subtitle: 'Brushed metal keypad with soft-glow icons',
-    badge: 'BASALTE',
+    title: 'Corporate Headquarters',
+    subtitle: 'Granite exterior cladding and lobby',
+    badge: 'COMMERCIAL',
     price: null,
-    poa: true,
+    poa: false,
     image: img9,
     categories: ['All', 'Commercial'],
     span: false,
   },
   {
     id: 3,
-    title: 'Sentido Touch Panel',
-    subtitle: 'Brushed metal keypad with soft-glow icons',
-    badge: 'BASALTE',
-    price: '$1,200',
+    title: 'Luxury Hotel',
+    subtitle: 'Onyx feature walls and custom vanities',
+    badge: 'HOSPITALITY',
+    price: null,
     poa: false,
     image: img17,
     categories: ['All', 'Hospitality'],
@@ -52,21 +53,21 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Sentido Touch Panel',
-    subtitle: 'Brushed metal keypad with soft-glow icons',
-    badge: 'BASALTE',
+    title: 'Private Residence',
+    subtitle: 'Quartzite countertops and outdoor patio',
+    badge: 'RESIDENTIAL',
     price: null,
-    poa: true,
+    poa: false,
     image: img14,
     categories: ['All', 'Residential'],
     span: false,
   },
   {
     id: 5,
-    title: 'Sentido Touch Panel',
-    subtitle: 'Brushed metal keypad with soft-glow icons',
-    badge: 'BASALTE',
-    price: '$1,200',
+    title: 'Boutique Store',
+    subtitle: 'Terrazzo flooring and display counters',
+    badge: 'COMMERCIAL',
+    price: null,
     poa: false,
     image: img2,
     categories: ['All', 'Commercial'],
@@ -77,6 +78,7 @@ const projects = [
 // ─── Component ───────────────────────────────────────────────
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('All');
   const heroRef       = useRef(null);
   const heroInnerRef  = useRef(null);
@@ -141,11 +143,11 @@ const Projects = () => {
         <div className="container">
           <div className={styles.heroInner} ref={heroInnerRef}>
             <div className={styles.heroBreadcrumb}>
-              <span>Home</span>
+              <span>{t('navbar.home', 'Home')}</span>
               <span className={styles.sep}>/</span>
-              <span className={styles.active}>Projects</span>
+              <span className={styles.active}>{t('navbar.projects', 'Projects')}</span>
             </div>
-            <h1 className={styles.heroTitle}>Our Projects</h1>
+            <h1 className={styles.heroTitle}>{t('experience.title')}</h1>
           </div>
         </div>
       </section>
@@ -168,15 +170,14 @@ const Projects = () => {
                       <path d="M4 8h8M8 4v8" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
                     </svg>
                   </span>
-                  <span className={styles.popularText}>MOST POPULAR</span>
+                  <span className={styles.popularText}>10,000+ PROJECTS</span>
                 </div>
-                <h2 className={styles.sectionTitle}>Highlighted Projects</h2>
+                <h2 className={styles.sectionTitle}>{t('experience.title')}</h2>
               </div>
 
               {/* Right: description */}
               <p className={styles.sectionDesc}>
-                A refined selection of control systems, keypads, and interfaces
-                designed for seamless integration and long-term performance.
+                {t('experience.p2')}
               </p>
             </div>
 
@@ -225,9 +226,6 @@ const Projects = () => {
                 <div className={styles.cardInfo}>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardSubtitle}>{project.subtitle}</p>
-                  <span className={styles.cardPrice}>
-                    {project.poa ? 'P.O.A.' : project.price}
-                  </span>
                 </div>
               </div>
             ))}

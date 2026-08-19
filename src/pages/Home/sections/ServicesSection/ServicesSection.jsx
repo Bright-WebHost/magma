@@ -15,7 +15,7 @@ const services = [
     id: 1,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 21H21M3 7L12 2L21 7M5 21V7M19 21V7M9 21V14H15V21" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 21H21M3 7L12 2L21 7M5 21V7M19 21V7M9 21V14H15V21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Supply',
@@ -26,8 +26,8 @@ const services = [
     id: 2,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 20H22M4 20V9L12 4L20 9V20M10 20V15H14V20M6 12H8M6 16H8M16 12H18M16 16H18" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="12" cy="9" r="2" stroke="#FF481F" strokeWidth="1.5"/>
+        <path d="M2 20H22M4 20V9L12 4L20 9V20M10 20V15H14V20M6 12H8M6 16H8M16 12H18M16 16H18" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="9" r="2" stroke="#0B7887" strokeWidth="1.5"/>
       </svg>
     ),
     title: 'Manufacturing ( cutting and polishing )',
@@ -38,8 +38,8 @@ const services = [
     id: 3,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 9V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V9M1 9H23M8 9V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V9" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M12 13V17M9 15H15" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M20 9V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V9M1 9H23M8 9V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V9" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 13V17M9 15H15" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Installation',
@@ -50,7 +50,7 @@ const services = [
     id: 4,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Maintenance',

@@ -70,7 +70,7 @@ const ScrollRevealLine = () => {
           C  40 800, 160 850, 160 950
           L 160 1000
         "
-        stroke="#FF481F"
+        stroke="#0B7887"
         strokeWidth="0.3"
         fill="none"
         strokeLinecap="round"

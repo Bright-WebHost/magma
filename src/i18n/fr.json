@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "projects": "Projets",
+    "blog": "Blog",
+    "pages": "Pages",
+    "services": "Services",
+    "customization": "Personnalisation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "MAGMA",
+    "subtitle": "Un héritage construit sur plus de 70 ans d'expérience dans l'industrie de la pierre."
+  },
+  "about": {
+    "title": "À propos de Magma",
+    "description_1": "Magma est une entreprise spécialisée dans l'industrie de la pierre, avec un héritage construit sur plus de 70 ans d'expérience. Au fil des décennies, nous avons développé une expertise approfondie dans la sélection, la transformation, la fourniture et la pose de pierres naturelles et de matériaux haut de gamme.",
+    "description_2": "En 2019, Magma a établi sa présence en Côte d'Ivoire, apportant sa longue expérience et son savoir-faire dans l'industrie de la pierre au marché local. Depuis lors, nous nous engageons à fournir des solutions en pierre de haute qualité pour des projets résidentiels, commerciaux et hôteliers.",
+    "description_3": "Notre travail est guidé par une passion pour la pierre naturelle, le souci du détail, un savoir-faire de qualité et la volonté de répondre aux besoins spécifiques de chaque client et de chaque projet."
+  },
+  "who_we_are": {
+    "title": "Qui sommes-nous ?",
+    "p1": "Magma est une entreprise intégrée verticalement, spécialisée dans l'industrie de la pierre et des surfaces. De l'approvisionnement direct auprès des carrières jusqu'à la pose finale, nous maîtrisons chaque étape du processus avec expertise, précision et souci du détail.",
+    "p2": "Nos compétences comprennent la fourniture, la fabrication, la transformation et la pose de pierres naturelles et de matériaux de surface haut de gamme. Cette approche intégrée nous permet de maintenir des standards élevés de qualité et de contrôle tout au long de chaque projet, de la sélection du matériau jusqu'à la finition finale.",
+    "p3": "Nous travaillons avec une large gamme de matériaux, notamment la pierre naturelle, le marbre, le granit, les plaques de céramique, le quartz-résine et le terrazzo. En combinant le savoir-faire artisanal traditionnel avec des techniques modernes et des finitions haut de gamme, nous proposons des solutions sur mesure pour des projets résidentiels, commerciaux, hôteliers et architecturaux.",
+    "p4": "Notre équipe travaille en étroite collaboration avec les clients, les architectes, les designers et les entrepreneurs afin de comprendre les exigences de chaque projet et de proposer des solutions qui allient fonctionnalité, durabilité et esthétique exceptionnelle.",
+    "p5": "De la carrière au projet fini, Magma apporte son expérience, son savoir-faire et sa recherche de la qualité à chaque surface que nous créons."
+  },
+  "history": {
+    "title": "Histoire et évolution de l'entreprise",
+    "p1": "L'histoire de Magma commence en 1953 à Beyrouth, au Liban, lorsque notre arrière-grand-père a fondé l'entreprise et posé les bases d'une entreprise familiale construite autour de la pierre naturelle et du savoir-faire artisanal.",
+    "p2": "Au fil des décennies, l'entreprise a continué à se développer d'une génération à l'autre. Sous la direction de notre grand-père, puis de ses fils, Magma a étendu sa présence au Moyen-Orient et à l'international, développant ses activités dans des pays tels que le Koweït, les Émirats arabes unis, Oman, le Qatar, l'Arabie saoudite et les États-Unis.",
+    "p3": "Après plus de sept décennies d'expérience dans l'industrie de la pierre, nous avons identifié l'Afrique comme une région présentant un fort potentiel de croissance et de développement. En 2019, Magma a établi sa présence en Côte d'Ivoire, ouvrant ainsi un nouveau chapitre de son histoire et étendant son héritage familial au marché africain.",
+    "p4": "Aujourd'hui, Magma associe trois générations d'expérience familiale à une vision internationale, en offrant son expertise dans le domaine de la pierre naturelle et en s'engageant pour la qualité, le savoir-faire et des relations durables avec ses clients et partenaires."
+  },
+  "experience": {
+    "title": "Notre expérience et nos projets",
+    "p1": "Depuis l'établissement de notre présence en Côte d'Ivoire en 2019, Magma a réalisé avec succès plus de 10 000 projets à travers le pays.",
+    "p2": "Notre expérience couvre un large éventail de secteurs, notamment les résidences, les restaurants, les hôtels, les bâtiments commerciaux et les grands projets architecturaux. Nous avons également eu le privilège de contribuer à des projets prestigieux tels que le Salon présidentiel de l'aéroport.",
+    "p3": "Chaque projet reflète notre engagement envers la qualité, la précision et la satisfaction de nos clients. Notre travail nous a permis de bâtir de solides relations avec nos clients et d'établir une réputation fondée sur la fourniture de matériaux de haute qualité, un savoir-faire exceptionnel et des finitions haut de gamme.",
+    "p4": "Des résidences privées aux projets commerciaux et hôteliers de grande envergure, Magma apporte le même niveau de professionnalisme, d'attention aux détails et de dévouement à chaque projet."
+  },
+  "vision": {
+    "title": "Notre vision",
+    "p1": "Devenir la référence leader en Afrique dans l'industrie de la pierre et des surfaces en combinant plus de sept décennies d'héritage familial avec l'innovation, le savoir-faire et une qualité sans compromis.",
+    "p2": "Notre vision est d'apporter une expertise de niveau international et des solutions en pierre haut de gamme au marché africain, tout en développant continuellement nos capacités et en établissant de nouveaux standards dans l'approvisionnement, la fabrication, la transformation et la pose de surfaces naturelles et techniques.",
+    "p3": "Nous souhaitons être le partenaire de confiance privilégié des architectes, designers, promoteurs, entrepreneurs et clients à la recherche de matériaux d'exception, d'un savoir-faire remarquable et de solutions complètes, de la carrière à la pose."
+  },
+  "mission": {
+    "title": "Notre mission",
+    "p1": "Chez Magma, notre mission est de transformer les surfaces naturelles et techniques en espaces d'exception grâce à notre expertise, notre savoir-faire et notre innovation.",
+    "p2": "De l'approvisionnement des matériaux auprès des carrières à la fabrication, la transformation et la pose finale, nous maîtrisons chaque étape du processus afin de fournir des solutions complètes et de haute qualité, adaptées aux besoins de chaque projet.",
+    "p3": "Nous nous engageons à offrir à nos clients des matériaux haut de gamme, une exécution précise, des finitions de qualité supérieure et un service fiable. En combinant plus de 70 ans d'expérience familiale avec des techniques modernes et une vision internationale, nous nous efforçons de dépasser les attentes et de créer une valeur durable dans chaque projet que nous réalisons.",
+    "p4": "Notre mission est de rendre accessibles à travers l'Afrique des solutions exceptionnelles en pierre et en surfaces, tout en construisant des relations durables avec nos clients, nos partenaires et les communautés dans lesquelles nous opérons."
+  },
+  "values": {
+    "title": "Nos valeurs",
+    "items": [
+      {
+        "name": "Qualité",
+        "desc": "Nous nous engageons à fournir des matériaux et un travail de haute qualité."
+      },
+      {
+        "name": "Savoir-faire",
+        "desc": "Nous combinons l'expérience, la précision et le souci du détail dans chaque projet."
+      },
+      {
+        "name": "Intégrité",
+        "desc": "Nous construisons des relations durables fondées sur l'honnêteté, la transparence et le professionnalisme."
+      },
+      {
+        "name": "Fiabilité",
+        "desc": "Nous nous efforçons de respecter nos engagements et d'offrir un service fiable."
+      },
+      {
+        "name": "Innovation",
+        "desc": "Nous explorons continuellement de nouveaux matériaux, techniques et solutions."
+      },
+      {
+        "name": "Satisfaction client",
+        "desc": "Nous travaillons en étroite collaboration avec nos clients afin de comprendre leurs besoins et de donner vie à leur vision."
+      }
+    ]
+  }
+}

@@ -26,8 +26,7 @@ const Footer = () => {
               </div>
             </div>
             <p className={styles.footerDesc}>
-              We collaborate with clients to create buildings and environments in dialogue with
-              culture and place.
+              A heritage built over more than 70 years of experience in the stone industry, bringing nature's finest materials to your spaces.
             </p>
             <div className={styles.socials}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -49,10 +48,10 @@ const Footer = () => {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Services</h4>
             <ul className={styles.footerLinks}>
-              <li><Link to="/blog">Supply</Link></li>
-              <li><Link to="/blog">Manufacturing ( cutting and polishing )</Link></li>
-              <li><Link to="/blog">Installation</Link></li>
-              <li><Link to="/blog">Maintenance</Link></li>
+              <li><Link to="/services">Marble Fabrication</Link></li>
+              <li><Link to="/services">Stone Installation</Link></li>
+              <li><Link to="/customization">Customization</Link></li>
+              <li><Link to="/services">Surface Restoration</Link></li>
             </ul>
           </div>
 

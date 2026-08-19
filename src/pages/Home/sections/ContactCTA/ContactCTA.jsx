@@ -80,7 +80,7 @@ const ContactCTA = () => {
         <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M550 80 C 450 100, 380 160, 320 220 C 260 280, 240 340, 270 380 C 290 410, 320 400, 300 360 C 280 330, 240 330, 220 360 C 200 390, 210 420, 250 440"
-            stroke="#FF481F"
+            stroke="#0B7887"
             strokeWidth="1.5"
             fill="none"
           />

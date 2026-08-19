@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import logo from '../../assets/images/logo.png';
 import { 
   FaMagnifyingGlass, 
   FaXmark, 
@@ -11,11 +13,12 @@ import {
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   const [isHide, setIsHide] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [lang, setLang] = useState('EN');
+  const [lang, setLang] = useState(i18n.language?.toUpperCase() || 'EN');
   const [searchQuery, setSearchQuery] = useState('');
   const location = useLocation();
 
@@ -61,6 +64,11 @@ const Navbar = () => {
     setIsSearchOpen(!isSearchOpen);
   };
 
+  const handleLangChange = (newLang) => {
+    setLang(newLang);
+    i18n.changeLanguage(newLang.toLowerCase());
+  };
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     console.log('Searching for:', searchQuery);
@@ -72,50 +80,42 @@ const Navbar = () => {
       <header className={`${styles.header} ${isSticky ? styles.sticky : ''} ${isHide ? styles.hide : ''}`}>
         {/* Logo */}
         <Link to="/" className={styles.logoContainer}>
-          <div className={styles.logoIcon}>
-            <svg viewBox="0 0 100 100" width="32" height="32">
-              <path d="M10 10 H90 V90 H10 Z M30 30 V70 H70 V50 H50 V30 Z" fillRule="evenodd" />
-            </svg>
-          </div>
-          <div className={styles.logoText}>
-            <span>Magma</span>
-            <span>co.</span>
-          </div>
+          <img src={logo} alt="Magma Logo" style={{ height: '40px', width: 'auto' }} />
         </Link>
 
         {/* Navigation Menu Links (Desktop) */}
         <nav className={styles.navMenu}>
           <NavLink to="/" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Home
+            {t('navbar.home', 'Home')}
           </NavLink>
           <NavLink to="/about" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            About
+            {t('navbar.about', 'About')}
           </NavLink>
           <NavLink to="/products" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Products
+            {t('navbar.products', 'Products')}
           </NavLink>
           <NavLink to="/services" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Services
+            {t('navbar.services', 'Services')}
           </NavLink>
           <NavLink to="/customization" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Customization
+            {t('navbar.customization', 'Customization')}
           </NavLink>
           <NavLink to="/projects" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Projects
+            {t('navbar.projects', 'Projects')}
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}>
-            Contact
+            {t('navbar.contact', 'Contact')}
           </NavLink>
         </nav>
 
         {/* Right Panel Items */}
         <div className={styles.rightPanel}>
           {/* Language Switcher */}
-          {/* <div className={styles.langSwitch}>
-            <span className={lang === 'EN' ? styles.active : ''} onClick={() => setLang('EN')}>EN</span>
+          <div className={styles.langSwitch} style={{ display: 'flex', gap: '8px', cursor: 'pointer', fontWeight: 'bold' }}>
+            <span style={{ color: lang === 'EN' ? '#e25e2e' : 'inherit' }} onClick={() => handleLangChange('EN')}>EN</span>
             <span className={styles.divider}>/</span>
-            <span className={lang === 'FR' ? styles.active : ''} onClick={() => setLang('FR')}>FR</span>
-          </div> */}
+            <span style={{ color: lang === 'FR' ? '#e25e2e' : 'inherit' }} onClick={() => handleLangChange('FR')}>FR</span>
+          </div>
 
           {/* Search Icon Trigger */}
           {/* <div className={styles.searchIcon} onClick={toggleSearch} role="button" aria-label="Open search">
@@ -141,15 +141,7 @@ const Navbar = () => {
           <div className={styles.drawerTop}>
             {/* Logo in Drawer */}
             <div className={styles.logoContainer}>
-              <div className={styles.logoIcon}>
-                <svg viewBox="0 0 100 100" width="32" height="32">
-                  <path d="M10 10 H90 V90 H10 Z M30 30 V70 H70 V50 H50 V30 Z" fillRule="evenodd" fill="#ffffff" />
-                </svg>
-              </div>
-              <div className={styles.logoText}>
-                <span>magma</span>
-                <span>co.</span>
-              </div>
+              <img src={logo} alt="Magma Logo" style={{ height: '40px', width: 'auto' }} />
             </div>
 
             {/* Paragraph Description */}
@@ -160,25 +152,25 @@ const Navbar = () => {
             {/* Mobile Navigation List (Visible only on <= 992px) */}
             <div className={styles.drawerMenu}>
               <NavLink to="/" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Home
+                {t('navbar.home', 'Home')}
               </NavLink>
               <NavLink to="/about" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                About
+                {t('navbar.about', 'About')}
               </NavLink>
               <NavLink to="/products" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Products
+                {t('navbar.products', 'Products')}
               </NavLink>
               <NavLink to="/services" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Services
+                {t('navbar.services', 'Services')}
               </NavLink>
               <NavLink to="/customization" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Customization
+                {t('navbar.customization', 'Customization')}
               </NavLink>
               <NavLink to="/projects" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Projects
+                {t('navbar.projects', 'Projects')}
               </NavLink>
               <NavLink to="/contact" className={({ isActive }) => `${styles.drawerNavLink} ${isActive ? styles.active : ''}`}>
-                Contact
+                {t('navbar.contact', 'Contact')}
               </NavLink>
             </div>
           </div>

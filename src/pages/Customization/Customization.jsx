@@ -24,7 +24,7 @@ const capabilities = [
     desc: 'Custom-crafted surfaces that combine durability, functionality, and timeless elegance in every kitchen environment.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 6H21M3 6V20H21V6M3 6L5 4H19L21 6M8 12H16M8 16H12" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 6H21M3 6V20H21V6M3 6L5 4H19L21 6M8 12H16M8 16H12" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     image: img1,
@@ -34,9 +34,9 @@ const capabilities = [
     desc: 'Premium stone vanities tailored to complement sophisticated interior spaces with precision edge profiling.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="8" width="18" height="4" rx="1" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M5 12V20M19 12V20M8 20H16" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M9 8V5C9 4.44772 9.44772 4 10 4H14C14.5523 4 15 4.44772 15 5V8" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="3" y="8" width="18" height="4" rx="1" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M5 12V20M19 12V20M8 20H16" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9 8V5C9 4.44772 9.44772 4 10 4H14C14.5523 4 15 4.44772 15 5V8" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     image: img9,
@@ -46,8 +46,8 @@ const capabilities = [
     desc: 'Precision-finished stone staircases that create a grand architectural statement and a lasting first impression.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 20H7V16H11V12H15V8H19V4" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M3 20V4" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M3 20H7V16H11V12H15V8H19V4" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 20V4" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     image: img14,
@@ -57,12 +57,12 @@ const capabilities = [
     desc: 'Elegant natural stone panels that add depth, texture, and refined character to any interior or exterior wall.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="3" width="8" height="5" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
-        <rect x="13" y="3" width="8" height="5" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
-        <rect x="3" y="10" width="8" height="5" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
-        <rect x="13" y="10" width="8" height="5" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
-        <rect x="3" y="17" width="8" height="4" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
-        <rect x="13" y="17" width="8" height="4" rx="1" stroke="#FF481F" strokeWidth="1.5"/>
+        <rect x="3" y="3" width="8" height="5" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
+        <rect x="13" y="3" width="8" height="5" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
+        <rect x="3" y="10" width="8" height="5" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
+        <rect x="13" y="10" width="8" height="5" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
+        <rect x="3" y="17" width="8" height="4" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
+        <rect x="13" y="17" width="8" height="4" rx="1" stroke="#0B7887" strokeWidth="1.5"/>
       </svg>
     ),
     image: img15,
@@ -72,8 +72,8 @@ const capabilities = [
     desc: 'Seamless stone flooring systems crafted for both residential and commercial environments with flawless finish.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 21H21M3 12H21M3 3H21" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M8 3V21M16 3V21" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M3 21H21M3 12H21M3 3H21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M8 3V21M16 3V21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     image: img17,
@@ -83,9 +83,9 @@ const capabilities = [
     desc: 'Exclusive marble furniture pieces designed for luxury interiors — from dining tables to fireplace surrounds.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 9V7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V9" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M1 9H23V14H1V9Z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M4 14V19M20 14V19" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M3 9V7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V9" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M1 9H23V14H1V9Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 14V19M20 14V19" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     image: img18,
@@ -114,7 +114,7 @@ const values = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L14.85 8.62L22 9.27L17 13.97L18.47 21L12 17.27L5.53 21L7 13.97L2 9.27L9.15 8.62L12 2Z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 2L14.85 8.62L22 9.27L17 13.97L18.47 21L12 17.27L5.53 21L7 13.97L2 9.27L9.15 8.62L12 2Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Unmatched Precision',
@@ -123,8 +123,8 @@ const values = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" stroke="#FF481F" strokeWidth="1.5"/>
-        <path d="M12 6v6l4 2" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#0B7887" strokeWidth="1.5"/>
+        <path d="M12 6v6l4 2" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'On-Time Delivery',
@@ -133,7 +133,7 @@ const values = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: '10-Year Warranty',
@@ -142,7 +142,7 @@ const values = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Dedicated Support',
@@ -341,7 +341,7 @@ const Customization = () => {
 
               <div className={styles.statsRow}>
                 <div className={styles.statItem}>
-                  <span className={styles.statNum}>18<em>+</em></span>
+                  <span className={styles.statNum}>70<em>+</em></span>
                   <span className={styles.statText}>Years Experience</span>
                 </div>
                 <div className={styles.statItem}>
@@ -349,8 +349,8 @@ const Customization = () => {
                   <span className={styles.statText}>Stone Varieties</span>
                 </div>
                 <div className={styles.statItem}>
-                  <span className={styles.statNum}>100<em>%</em></span>
-                  <span className={styles.statText}>Bespoke Made</span>
+                  <span className={styles.statNum}>10,000<em>+</em></span>
+                  <span className={styles.statText}>Projects Delivered</span>
                 </div>
               </div>
 

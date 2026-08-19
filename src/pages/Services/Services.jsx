@@ -20,9 +20,9 @@ const services = [
     desc: 'Custom cutting, shaping and finishing of marble slabs with surgical precision for countertops, feature walls and flooring.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M2 17L12 22L22 17" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M2 12L12 17L22 12" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 17L12 22L22 17" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 12L12 17L22 12" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
   },
@@ -32,8 +32,8 @@ const services = [
     desc: 'Expert on-site installation by certified craftsmen ensuring seamless joints, perfect levelling and impeccable finish.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="3" width="20" height="14" rx="2" stroke="#FF481F" strokeWidth="1.5"/>
-        <path d="M8 21H16M12 17V21" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="3" width="20" height="14" rx="2" stroke="#0B7887" strokeWidth="1.5"/>
+        <path d="M8 21H16M12 17V21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -43,7 +43,7 @@ const services = [
     desc: 'Collaborative design sessions with our expert consultants to find the perfect stone, colour and pattern for your space.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
   },
@@ -53,8 +53,8 @@ const services = [
     desc: 'Professional polishing, honing and sealing to revive worn or damaged stone surfaces back to their original glory.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" stroke="#FF481F" strokeWidth="1.5"/>
-        <path d="M12 8V12L15 15" stroke="#FF481F" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#0B7887" strokeWidth="1.5"/>
+        <path d="M12 8V12L15 15" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -200,11 +200,11 @@ const Services = () => {
           <svg viewBox="0 0 1440 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path
               d="M1430 10 C 1200 60, 950 80, 780 160 C 620 240, 560 350, 480 420 C 400 490, 300 500, 100 540"
-              stroke="#FF481F" strokeWidth="1.5" fill="none" opacity="0.35"
+              stroke="#0B7887" strokeWidth="1.5" fill="none" opacity="0.35"
             />
             <path
               d="M 510 460 C 490 510, 545 560, 595 545 C 645 530, 620 590, 575 610"
-              stroke="#FF481F" strokeWidth="1.5" fill="none" opacity="0.35"
+              stroke="#0B7887" strokeWidth="1.5" fill="none" opacity="0.35"
             />
           </svg>
         </div>
@@ -291,7 +291,7 @@ const Services = () => {
 
             {/* Stat card — top centre */}
             <div className={`${styles.bentoItem} ${styles.bentoStat}`}>
-              <span className={styles.bentoStatNum}>850<em>+</em></span>
+              <span className={styles.bentoStatNum}>10,000<em>+</em></span>
               <span className={styles.bentoStatText}>Projects Completed</span>
             </div>
 
@@ -313,8 +313,8 @@ const Services = () => {
 
             {/* Stat card — bottom left */}
             <div className={`${styles.bentoItem} ${styles.bentoStat} ${styles.bentoStatBottom}`}>
-              <span className={styles.bentoStatNum}>200<em>+</em></span>
-              <span className={styles.bentoStatText}>Happy Clients</span>
+              <span className={styles.bentoStatNum}>3</span>
+              <span className={styles.bentoStatText}>Generations</span>
             </div>
 
             {/* Medium image — bottom centre */}
@@ -329,7 +329,7 @@ const Services = () => {
 
             {/* Stat card — bottom centre-right */}
             <div className={`${styles.bentoItem} ${styles.bentoStat}`}>
-              <span className={styles.bentoStatNum}>15<em>+</em></span>
+              <span className={styles.bentoStatNum}>70<em>+</em></span>
               <span className={styles.bentoStatText}>Years Experience</span>
             </div>
 
