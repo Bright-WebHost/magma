@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import styles from './ServicesSection.module.scss';
-import serviceImg from '../../../../assets/images/img/10.webp';
+import serviceImg from '../../../../assets/images/img/10.png';
 import serviceImg2 from '../../../../assets/images/img/11.webp';
 import serviceImg3 from '../../../../assets/images/img/12.webp';
 import serviceImg4 from '../../../../assets/images/img/13.webp';
@@ -60,6 +61,7 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const col1Ref = useRef(null);
@@ -150,7 +152,7 @@ const ServicesSection = () => {
       <div className="container">
         {/* Section Heading */}
         <div className={styles.sectionHeader} ref={headingRef}>
-          <p className={styles.sectionLabel}>OUR SERVICES</p>
+          <p className={styles.sectionLabel}>{t('home_page.services_section.label')}</p>
         </div>
 
         {/* Services Grid — 4 columns with vertical stagger on columns 2 & 4 */}
@@ -159,11 +161,11 @@ const ServicesSection = () => {
           <div className={`${styles.serviceCol} ${styles.colOdd}`} ref={col1Ref}>
             <div className={styles.serviceCard}>
               <div className={styles.cardIcon}>{services[0].icon}</div>
-              <h3 className={styles.cardTitle}>{services[0].title}</h3>
+              <h3 className={styles.cardTitle}>{t('home_page.services_section.items.0.title')}</h3>
               <div className={styles.cardImage}>
-                <img src={services[0].image} alt={services[0].title} />
+                <img src={services[0].image} alt={t('home_page.services_section.items.0.title')} />
               </div>
-              <p className={styles.cardTags}>{services[0].tags}</p>
+              <p className={styles.cardTags}>{t('home_page.services_section.items.0.tags')}</p>
               <button className={styles.cardArrow} aria-label="Learn more"><ArrowUpRight strokeWidth={0.75} /></button>
             </div>
           </div>
@@ -172,11 +174,11 @@ const ServicesSection = () => {
           <div className={`${styles.serviceCol} ${styles.colEven}`} ref={col2Ref}>
             <div className={styles.serviceCard}>
               <div className={styles.cardIcon}>{services[1].icon}</div>
-              <h3 className={styles.cardTitle}>{services[1].title}</h3>
+              <h3 className={styles.cardTitle}>{t('home_page.services_section.items.1.title')}</h3>
               <div className={styles.cardImage}>
-                <img src={services[1].image} alt={services[1].title} />
+                <img src={services[1].image} alt={t('home_page.services_section.items.1.title')} />
               </div>
-              <p className={styles.cardTags}>{services[1].tags}</p>
+              <p className={styles.cardTags}>{t('home_page.services_section.items.1.tags')}</p>
               <button className={styles.cardArrow} aria-label="Learn more"><ArrowUpRight strokeWidth={0.75} /></button>
             </div>
           </div>
@@ -185,11 +187,11 @@ const ServicesSection = () => {
           <div className={`${styles.serviceCol} ${styles.colOdd}`} ref={col3Ref}>
             <div className={styles.serviceCard}>
               <div className={styles.cardIcon}>{services[2].icon}</div>
-              <h3 className={styles.cardTitle}>{services[2].title}</h3>
+              <h3 className={styles.cardTitle}>{t('home_page.services_section.items.2.title')}</h3>
               <div className={styles.cardImage}>
-                <img src={services[2].image} alt={services[2].title} />
+                <img src={services[2].image} alt={t('home_page.services_section.items.2.title')} />
               </div>
-              <p className={styles.cardTags}>{services[2].tags}</p>
+              <p className={styles.cardTags}>{t('home_page.services_section.items.2.tags')}</p>
               <button className={styles.cardArrow} aria-label="Learn more"><ArrowUpRight strokeWidth={0.75} /></button>
             </div>
           </div>
@@ -198,11 +200,11 @@ const ServicesSection = () => {
           <div className={`${styles.serviceCol} ${styles.colEven}`} ref={col4Ref}>
             <div className={styles.serviceCard}>
               <div className={styles.cardIcon}>{services[3].icon}</div>
-              <h3 className={styles.cardTitle}>{services[3].title}</h3>
+              <h3 className={styles.cardTitle}>{t('home_page.services_section.items.3.title')}</h3>
               <div className={styles.cardImage}>
-                <img src={services[3].image} alt={services[3].title} />
+                <img src={services[3].image} alt={t('home_page.services_section.items.3.title')} />
               </div>
-              <p className={styles.cardTags}>{services[3].tags}</p>
+              <p className={styles.cardTags}>{t('home_page.services_section.items.3.tags')}</p>
               <button className={styles.cardArrow} aria-label="Learn more"><ArrowUpRight strokeWidth={0.75} /></button>
             </div>
           </div>
