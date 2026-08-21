@@ -381,7 +381,7 @@ const Contact = () => {
 
                 {/* Social links */}
                 <div className={styles.socialRow}>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.instagram.com/magmastoneco/" target="_blank" rel="noopener noreferrer"
                     aria-label="Instagram" className={styles.socialLink}>
                     <svg viewBox="0 0 24 24" fill="none">
                       <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.5"/>
@@ -397,7 +397,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="1.5"/>
                     </svg>
                   </a>
-                  <a href="https://www.facebook.com/magmazco/" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.facebook.com/profile.php?id=61591578427858" target="_blank" rel="noopener noreferrer"
                     aria-label="Facebook" className={styles.socialLink}>
                     <svg viewBox="0 0 24 24" fill="none">
                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
