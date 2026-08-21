@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/img/logo.png';
 import { 
   FaMagnifyingGlass, 
   FaXmark, 
@@ -111,10 +111,19 @@ const Navbar = () => {
         {/* Right Panel Items */}
         <div className={styles.rightPanel}>
           {/* Language Switcher */}
-          <div className={styles.langSwitch} style={{ display: 'flex', gap: '8px', cursor: 'pointer', fontWeight: 'bold' }}>
-            <span style={{ color: lang === 'EN' ? '#e25e2e' : 'inherit' }} onClick={() => handleLangChange('EN')}>EN</span>
-            <span className={styles.divider}>/</span>
-            <span style={{ color: lang === 'FR' ? '#e25e2e' : 'inherit' }} onClick={() => handleLangChange('FR')}>FR</span>
+          <div className={styles.langToggle}>
+            <button 
+              className={`${styles.langBtn} ${lang === 'EN' ? styles.active : ''}`}
+              onClick={() => handleLangChange('EN')}
+            >
+              EN
+            </button>
+            <button 
+              className={`${styles.langBtn} ${lang === 'FR' ? styles.active : ''}`}
+              onClick={() => handleLangChange('FR')}
+            >
+              FR
+            </button>
           </div>
 
           {/* Search Icon Trigger */}

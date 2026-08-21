@@ -167,28 +167,47 @@
   z-index: $z-header + 10;
 }
 
-.langSwitch {
+.langToggle {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: $color-white;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 
-  span {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
+  .sticky & {
+    background: rgba(30, 30, 32, 0.05);
+    border-color: rgba(30, 30, 32, 0.1);
+  }
+}
 
-    &:hover, &.active {
-      opacity: 1;
-      color: $color-orange;
-    }
+.langBtn {
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 10px;
+  font-family: $font-sans;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  .sticky & {
+    color: rgba(30, 30, 32, 0.7);
   }
 
-  .divider {
-    opacity: 0.3;
+  &.active {
+    background: $color-orange; /* Uses the global theme color (Teal) */
+    color: $color-white !important;
+  }
+
+  &:hover:not(.active) {
+    color: $color-white;
+    
+    .sticky & {
+      color: $color-dark;
+    }
   }
 }
 
