@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useRef, useEffect } from 'react';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import styles from './ProductsSection.module.scss';
@@ -36,6 +37,7 @@ const products = [
 ];
 
 const ProductsSection = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const tilesRef = useRef([]);
@@ -113,19 +115,19 @@ const ProductsSection = () => {
       <div className={styles.inner}>
 
         {/* Small label */}
-        <p className={styles.sectionLabel} ref={labelRef}>PRODUCTS</p>
+        <p className={styles.sectionLabel} ref={labelRef}>{t('misc.products_label')}</p>
 
         {/* Giant display heading */}
         <h2 className={styles.displayHeading} ref={headingRef}>
-          <span className={styles.line1}>Nature Paints</span>
-          <span className={styles.line2}>The Best</span>
-          <span className={styles.line3}>Masterpieces For Us</span>
+          <span className={styles.line1}>{t('misc.prod_line1')}</span>
+          <span className={styles.line2}>{t('misc.prod_line2')}</span>
+          <span className={styles.line3}>{t('misc.prod_line3')}</span>
         </h2>
 
         {/* Gold divider — line + ELITE STONE */}
         <div className={styles.divider} ref={dividerRef}>
           <span className={styles.dividerLine} />
-          <span className={styles.dividerText}>ELITE STONE</span>
+          <span className={styles.dividerText}>{t('misc.elite_stone')}</span>
         </div>
 
         {/* 5 diamond product tiles */}

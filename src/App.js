@@ -15,7 +15,7 @@ import './styles/globals.scss';
 
 function App() {
   return (
-    <BrowserRouter basename="/magma">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

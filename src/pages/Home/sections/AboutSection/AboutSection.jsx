@@ -153,7 +153,7 @@ const AboutSection = () => {
 
           {/* Right: Text content */}
           <div className={styles.rightCol} ref={textRef}>
-            <h2 className={styles.estTitle}>Est. 1953</h2>
+            <h2 className={styles.estTitle}>{t('misc.est_1953')}</h2>
             <p className={styles.desc}>
               {t('who_we_are.p1')}
             </p>

@@ -170,7 +170,7 @@ const Projects = () => {
                       <path d="M4 8h8M8 4v8" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
                     </svg>
                   </span>
-                  <span className={styles.popularText}>10,000+ PROJECTS</span>
+                  <span className={styles.popularText}>{t('projects_page.header_badge')}</span>
                 </div>
                 <h2 className={styles.sectionTitle}>{t('experience.title')}</h2>
               </div>
@@ -193,12 +193,12 @@ const Projects = () => {
                     className={`${styles.filterTab} ${activeFilter === tab ? styles.active : ''}`}
                     onClick={() => setActiveFilter(tab)}
                   >
-                    {tab}
+                    {t(`projects_page.filters.${tab}`)}
                   </button>
                 ))}
               </div>
               <Link to="/contact" className={styles.inquireBtn}>
-                Request a Quote <ArrowUpRight strokeWidth={0.75} />
+                {t('projects_page.quote_btn')} <ArrowUpRight strokeWidth={0.75} />
               </Link>
             </div>
           </div>
@@ -213,19 +213,19 @@ const Projects = () => {
               >
                 {/* Background image */}
                 <div className={styles.cardImg}>
-                  <img src={project.image} alt={project.title} />
+                  <img src={project.image} alt={t(`projects_page.items.${index}.title`)} />
                 </div>
 
                 {/* Overlay gradient */}
                 <div className={styles.cardOverlay} aria-hidden="true" />
 
                 {/* Badge — top right */}
-                <div className={styles.cardBadge}>{project.badge}</div>
+                <div className={styles.cardBadge}>{t(`projects_page.badges.${project.badge}`)}</div>
 
                 {/* Info — bottom */}
                 <div className={styles.cardInfo}>
-                  <h3 className={styles.cardTitle}>{project.title}</h3>
-                  <p className={styles.cardSubtitle}>{project.subtitle}</p>
+                  <h3 className={styles.cardTitle}>{t(`projects_page.items.${index}.title`)}</h3>
+                  <p className={styles.cardSubtitle}>{t(`projects_page.items.${index}.subtitle`)}</p>
                 </div>
               </div>
             ))}
@@ -243,16 +243,15 @@ const Projects = () => {
             <div className={styles.ctaText}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Start Your Project</span>
+                <span className={styles.metaLabel}>{t('projects_page.cta.label')}</span>
               </div>
-              <h2 className={styles.ctaHeading}>Ready to Transform Your Space?</h2>
+              <h2 className={styles.ctaHeading}>{t('projects_page.cta.heading')}</h2>
               <p className={styles.ctaDesc}>
-                Our team is ready to bring your vision to life with premium stone craftsmanship
-                and unmatched installation expertise.
+                {t('projects_page.cta.desc')}
               </p>
             </div>
             <Link to="/contact" className={styles.ctaButton}>
-              Get In Touch <ArrowUpRight strokeWidth={0.75} />
+              {t('projects_page.cta.btn')} <ArrowUpRight strokeWidth={0.75} />
             </Link>
           </div>
         </div>

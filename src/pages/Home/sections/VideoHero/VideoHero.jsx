@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
@@ -6,6 +7,7 @@ import styles from './VideoHero.module.scss';
 import heroVideo from '../../../../assets/images/video/magma-video.mp4';
 
 const VideoHero = () => {
+  const { t } = useTranslation();
   const sectionRef   = useRef(null);
   const videoRef     = useRef(null);
   const containerRef = useRef(null);
@@ -190,7 +192,7 @@ const VideoHero = () => {
 
             {/* <div className={styles.scrollHint}>
               <div className={styles.scrollLine} ref={scrollLineRef} />
-              <span className={styles.scrollLabel}>Scroll to reveal</span>
+              <span className={styles.scrollLabel}>{t('misc.scroll_reveal')}</span>
             </div> */}
           </div>
 
@@ -198,17 +200,17 @@ const VideoHero = () => {
           {/* <div className={styles.infoBar}>
             <div className={styles.infoItem}>
               <span className={styles.infoNum}>38+</span>
-              <span className={styles.infoLabel}>Years of Craftsmanship</span>
+              <span className={styles.infoLabel}>{t('misc.years_craftsmanship')}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoNum}>500+</span>
-              <span className={styles.infoLabel}>Projects Completed</span>
+              <span className={styles.infoLabel}>{t('misc.projects_delivered')}</span>
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoItem}>
               <span className={styles.infoNum}>12</span>
-              <span className={styles.infoLabel}>Industry Awards</span>
+              <span className={styles.infoLabel}>{t('misc.industry_awards')}</span>
             </div>
 
             <div className={styles.progressTrack}>

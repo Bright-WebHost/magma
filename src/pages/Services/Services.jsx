@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './Services.module.scss';
@@ -70,6 +71,7 @@ const processSteps = [
 // ─── Component ───────────────────────────────────────────────
 
 const Services = () => {
+  const { t } = useTranslation();
   const heroRef        = useRef(null);
   const heroInnerRef   = useRef(null);
   const introRef       = useRef(null);
@@ -183,11 +185,11 @@ const Services = () => {
         <div className="container">
           <div className={styles.heroInner} ref={heroInnerRef}>
             <div className={styles.heroBreadcrumb}>
-              <span>Home</span>
+              <span>{t('navbar.home')}</span>
               <span className={styles.sep}>/</span>
-              <span className={styles.active}>Services</span>
+              <span className={styles.active}>{t('services_page.breadcrumb')}</span>
             </div>
-            <h1 className={styles.heroTitle}>Our Services</h1>
+            <h1 className={styles.heroTitle}>{t('services_page.title')}</h1>
           </div>
         </div>
       </section>
@@ -219,7 +221,7 @@ const Services = () => {
               </div>
               <div className={styles.floatingCard}>
                 <span className={styles.floatNumber}>15<em style={{ fontSize: '28px', fontWeight: 400 }}>+</em></span>
-                <span className={styles.floatLabel}>Years of<br />Excellence</span>
+                <span className={styles.floatLabel}>{t('misc.years_of')}<br />{t('misc.excellence')}</span>
               </div>
             </div>
 
@@ -227,7 +229,7 @@ const Services = () => {
             <div className={styles.introTextSide} ref={introTextRef}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>What We Offer</span>
+                <span className={styles.metaLabel}>{t('misc.what_we_offer')}</span>
               </div>
 
               <h2 className={styles.introHeading}>
@@ -273,8 +275,8 @@ const Services = () => {
       <div className={styles.bentoSection}>
         <div className="container">
           <div className={styles.bentoHeader}>
-            <p className={styles.bentoLabel}>Our Specialisations</p>
-            <h2 className={styles.bentoTitle}>Stone Solutions for Every Vision</h2>
+            <p className={styles.bentoLabel}>{t('services_page.bento_label')}</p>
+            <h2 className={styles.bentoTitle}>{t('services_page.bento_title')}</h2>
           </div>
 
           <div className={styles.bentoGrid} ref={bentoRef}>
@@ -284,15 +286,15 @@ const Services = () => {
               <img src={img1} alt="Marble fabrication workshop" />
               <div className={styles.bentoImgOverlay} />
               <div className={styles.bentoImgLabel}>
-                <span>Marble Fabrication</span>
-                <p>Precision-cut surfaces tailored to your exact specifications.</p>
+                <span>{t('services_page.bento_items.marble_fab')}</span>
+                <p>{t('services_page.bento_items.marble_fab_desc')}</p>
               </div>
             </div>
 
             {/* Stat card — top centre */}
             <div className={`${styles.bentoItem} ${styles.bentoStat}`}>
               <span className={styles.bentoStatNum}>10,000<em>+</em></span>
-              <span className={styles.bentoStatText}>Projects Completed</span>
+              <span className={styles.bentoStatText}>{t('services_page.bento_items.proj_comp')}</span>
             </div>
 
             {/* Large image — top right */}
@@ -300,21 +302,21 @@ const Services = () => {
               <img src={img9} alt="Stone installation" />
               <div className={styles.bentoImgOverlay} />
               <div className={styles.bentoImgLabel}>
-                <span>Stone Installation</span>
-                <p>Flawless on-site installation by certified craftsmen.</p>
+                <span>{t('services_page.bento_items.stone_inst')}</span>
+                <p>{t('services_page.bento_items.stone_inst_desc')}</p>
               </div>
             </div>
 
             {/* Stat card — top right corner */}
             <div className={`${styles.bentoItem} ${styles.bentoStat} ${styles.bentoStatAlt}`}>
               <span className={styles.bentoStatNum}>40<em>+</em></span>
-              <span className={styles.bentoStatText}>Stone Varieties</span>
+              <span className={styles.bentoStatText}>{t('services_page.bento_items.stone_var')}</span>
             </div>
 
             {/* Stat card — bottom left */}
             <div className={`${styles.bentoItem} ${styles.bentoStat} ${styles.bentoStatBottom}`}>
               <span className={styles.bentoStatNum}>3</span>
-              <span className={styles.bentoStatText}>Generations</span>
+              <span className={styles.bentoStatText}>{t('services_page.bento_items.generations')}</span>
             </div>
 
             {/* Medium image — bottom centre */}
@@ -322,15 +324,15 @@ const Services = () => {
               <img src={img14} alt="Design consultation" />
               <div className={styles.bentoImgOverlay} />
               <div className={styles.bentoImgLabel}>
-                <span>Design Consultation</span>
-                <p>Expert guidance to find your perfect stone.</p>
+                <span>{t('services_page.bento_items.design_cons')}</span>
+                <p>{t('services_page.bento_items.design_cons_desc')}</p>
               </div>
             </div>
 
             {/* Stat card — bottom centre-right */}
             <div className={`${styles.bentoItem} ${styles.bentoStat}`}>
               <span className={styles.bentoStatNum}>70<em>+</em></span>
-              <span className={styles.bentoStatText}>Years Experience</span>
+              <span className={styles.bentoStatText}>{t('services_page.bento_items.years_exp')}</span>
             </div>
 
             {/* Image — bottom right */}
@@ -338,8 +340,8 @@ const Services = () => {
               <img src={img15} alt="Surface restoration" />
               <div className={styles.bentoImgOverlay} />
               <div className={styles.bentoImgLabel}>
-                <span>Surface Restoration</span>
-                <p>Revive your stone to its original brilliance.</p>
+                <span>{t('services_page.bento_items.surf_rest')}</span>
+                <p>{t('services_page.bento_items.surf_rest_desc')}</p>
               </div>
             </div>
 
@@ -355,7 +357,7 @@ const Services = () => {
 
           {/* Header */}
           <div className={styles.processHeader} ref={processHdrRef}>
-            <p className={styles.processLabel}>How We Work</p>
+            <p className={styles.processLabel}>{t('services_page.process_label')}</p>
           </div>
 
           {/* Process grid — 2 col image + steps */}
@@ -371,21 +373,25 @@ const Services = () => {
               <div className={styles.processImgContent}>
                 <div className={styles.processImgTag}>
                   <span className={styles.processTagDot} />
-                  <span className={styles.processTagText}>Our Process</span>
+                  <span className={styles.processTagText}>{t('services_page.process_tag')}</span>
                 </div>
                 <h3 className={styles.processImgTitle}>
-                  From Raw Stone to Refined Masterpiece
+                  {t('services_page.process_title')}
                 </h3>
                 <p className={styles.processImgBody}>
-                  Every project follows our meticulous four-step methodology — ensuring
-                  precision, transparency and an outcome that surpasses expectations.
+                  {t('services_page.process_desc')}
                 </p>
               </div>
             </div>
 
             {/* Right: steps grid */}
             <div className={styles.stepsGrid}>
-              {processSteps.map((step, i) => (
+              {[
+                { num: '01', title: t('services_page.process_steps.step1_title'), desc: t('services_page.process_steps.step1_desc') },
+                { num: '02', title: t('services_page.process_steps.step2_title'), desc: t('services_page.process_steps.step2_desc') },
+                { num: '03', title: t('services_page.process_steps.step3_title'), desc: t('services_page.process_steps.step3_desc') },
+                { num: '04', title: t('services_page.process_steps.step4_title'), desc: t('services_page.process_steps.step4_desc') },
+              ].map((step, i) => (
                 <div
                   key={step.num}
                   className={styles.stepCard}
@@ -426,18 +432,17 @@ const Services = () => {
             <div className={styles.ctaTextBlock}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Ready to Begin?</span>
+                <span className={styles.metaLabel}>{t('services_page.cta_label')}</span>
               </div>
               <h2 className={styles.ctaHeading}>
-                Let's Bring Your Stone Vision to Life
+                {t('services_page.cta_title')}
               </h2>
               <p className={styles.ctaDesc}>
-                Speak with one of our stone specialists today and receive a personalised quote
-                tailored to your project — no obligation, just expertise.
+                {t('services_page.cta_desc')}
               </p>
             </div>
             <Link to="/contact" className={styles.ctaButton}>
-              Get In Touch <ArrowUpRight strokeWidth={0.75} />
+              {t('services_page.cta_button')} <ArrowUpRight strokeWidth={0.75} />
             </Link>
           </div>
         </div>

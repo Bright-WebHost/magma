@@ -1,10 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { FaMagnifyingGlass, FaChevronRight } from 'react-icons/fa6';
 import { gsap, ScrollTrigger } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './Products.module.scss';
 import { ArrowUpRight } from 'lucide-react';
+
+import imgHero from '../../assets/images/img/1.webp';
+import imgP1 from '../../assets/images/img/14.webp';
+import imgP2 from '../../assets/images/img/5.webp';
+import imgP3 from '../../assets/images/img/22.webp';
+import imgP4 from '../../assets/images/img/26.webp';
+import imgP5 from '../../assets/images/img/2.webp';
+import imgP6 from '../../assets/images/img/3.webp';
+import imgP7 from '../../assets/images/img/27.webp';
+import imgP8 from '../../assets/images/img/4.webp';
+import imgP9 from '../../assets/images/img/16.webp';
+import imgP10 from '../../assets/images/img/25.webp';
 
 // ─── Stone Products Data ─────────────────────────────────────
 const stoneProducts = [
@@ -15,7 +28,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Elegant polished marble slab',
     details: 'Premium interiors and luxury flooring',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=85',
+    image: imgP1,
   },
   {
     id: 'granite',
@@ -23,7 +36,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Natural granite with rich texture',
     details: 'Durable for kitchens and exteriors',
-    image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&q=85',
+    image: imgP2,
   },
   {
     id: 'quartzite',
@@ -31,7 +44,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Exotic quartzite stone',
     details: 'Strong, luxurious natural finish',
-    image: 'https://images.unsplash.com/photo-1628566638003-8ccd6fce6869?w=800&q=85',
+    image: imgP3,
   },
   {
     id: 'onyx',
@@ -39,7 +52,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Translucent premium onyx slab',
     details: 'Ideal for feature walls and backlit designs',
-    image: 'https://images.unsplash.com/photo-1565034946487-077786996e27?w=800&q=85',
+    image: imgP4,
   },
   {
     id: 'basalt',
@@ -47,7 +60,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Dark volcanic stone',
     details: 'Contemporary architecture and landscaping',
-    image: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=800&q=85',
+    image: imgP5,
   },
   {
     id: 'limestone',
@@ -55,7 +68,7 @@ const stoneProducts = [
     category: 'natural',
     description: 'Soft natural limestone',
     details: 'Warm and timeless appearance',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=85',
+    image: imgP6,
   },
   // Category 2: Artificial Stones
   {
@@ -64,7 +77,7 @@ const stoneProducts = [
     category: 'artificial',
     description: 'Premium engineered surface',
     details: 'Modern interiors and commercial spaces',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=85',
+    image: imgP7,
   },
   {
     id: 'ceramique-slabs',
@@ -72,7 +85,7 @@ const stoneProducts = [
     category: 'artificial',
     description: 'Large-format ceramic slabs',
     details: 'Heat, stain, and scratch resistant',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=85',
+    image: imgP8,
   },
   {
     id: 'quartz',
@@ -80,7 +93,7 @@ const stoneProducts = [
     category: 'artificial',
     description: 'Engineered quartz surfaces',
     details: 'Perfect for kitchen countertops',
-    image: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=85',
+    image: imgP9,
   },
   {
     id: 'terrazzo',
@@ -88,11 +101,12 @@ const stoneProducts = [
     category: 'artificial',
     description: 'Designer terrazzo slabs',
     details: 'Contemporary decorative flooring and walls',
-    image: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=800&q=85',
+    image: imgP10,
   },
 ];
 
 const Products = () => {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState('all'); // 'all', 'natural', 'artificial'
 
@@ -195,7 +209,7 @@ const Products = () => {
       <section className={styles.heroSection} ref={heroRef}>
         <div className={styles.heroBg} aria-hidden="true">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=85"
+            src={imgHero}
             alt="Luxury premium stone slab"
           />
         </div>
@@ -205,12 +219,12 @@ const Products = () => {
           <div className={styles.heroInner} ref={heroInnerRef}>
             {/* Breadcrumb Navigation */}
             <div className={styles.heroBreadcrumb}>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('navbar.home')}</Link>
               <span className={styles.sep}><FaChevronRight /></span>
-              <span className={styles.active}>Products</span>
+              <span className={styles.active}>{t('products_page.breadcrumb')}</span>
             </div>
 
-            <h1 className={styles.heroTitle}>Our Products</h1>
+            <h1 className={styles.heroTitle}>{t('products_page.title')}</h1>
             {/* <p className={styles.heroSubtitle}>
               Explore our premium collection of natural and engineered stones crafted for
               timeless architecture and interior spaces.
@@ -230,7 +244,7 @@ const Products = () => {
               <FaMagnifyingGlass className={styles.searchIcon} />
               <input
                 type="text"
-                placeholder="Search products, materials..."
+                placeholder={t('products_page.search_placeholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className={styles.searchInput}
@@ -252,19 +266,19 @@ const Products = () => {
                 className={`${styles.tabBtn} ${activeTab === 'all' ? styles.active : ''}`}
                 onClick={() => setActiveTab('all')}
               >
-                All Stones
+                {t('products_page.filter_all')}
               </button>
               <button
                 className={`${styles.tabBtn} ${activeTab === 'natural' ? styles.active : ''}`}
                 onClick={() => setActiveTab('natural')}
               >
-                Natural Stones
+                {t('products_page.filter_natural')}
               </button>
               <button
                 className={`${styles.tabBtn} ${activeTab === 'artificial' ? styles.active : ''}`}
                 onClick={() => setActiveTab('artificial')}
               >
-                Artificial Stones
+                {t('products_page.filter_artificial')}
               </button>
             </div>
           </div>
@@ -278,8 +292,8 @@ const Products = () => {
         <div className="container">
           {filteredProducts.length === 0 ? (
             <div className={styles.noResults}>
-              <h3>No stones match your criteria</h3>
-              <p>Try resetting the search query or changing active category filter.</p>
+              <h3>{t('products_page.no_results_title')}</h3>
+              <p>{t('products_page.no_results_desc')}</p>
               <button
                 onClick={() => {
                   setSearchQuery('');
@@ -287,7 +301,7 @@ const Products = () => {
                 }}
                 className={styles.resetBtn}
               >
-                Reset Filters
+                {t('products_page.reset_filters')}
               </button>
             </div>
           ) : (
@@ -296,10 +310,10 @@ const Products = () => {
               {naturalStones.length > 0 && (
                 <div className={styles.categoryBlock}>
                   <div className={styles.categoryHeader}>
-                    <h2 className={styles.categoryTitle}>Natural Stones</h2>
+                    <h2 className={styles.categoryTitle}>{t('products_page.cat_natural')}</h2>
                     <div className={styles.categoryDivider}>
                       <span className={styles.dividerLine} />
-                      <span className={styles.dividerLabel}>MAGMA NATURAL</span>
+                      <span className={styles.dividerLabel}>{t('products_page.cat_natural_label')}</span>
                     </div>
                   </div>
 
@@ -315,7 +329,7 @@ const Products = () => {
                           />
                         </div>
                         <div className={styles.cardContent}>
-                          <h3 className={styles.productName}>{product.name}</h3>
+                          <h3 className={styles.productName}>{t(`products_page.items.${product.id.replace('-', '_')}.name`, product.name)}</h3>
                           {/* <p className={styles.productDesc}>{product.description}</p>
                           <p className={styles.productDetails}>{product.details}</p>
                           <div className={styles.cardFooter}>
@@ -334,10 +348,10 @@ const Products = () => {
               {artificialStones.length > 0 && (
                 <div className={styles.categoryBlock}>
                   <div className={styles.categoryHeader}>
-                    <h2 className={styles.categoryTitle}>Artificial Stones</h2>
+                    <h2 className={styles.categoryTitle}>{t('products_page.cat_artificial')}</h2>
                     <div className={styles.categoryDivider}>
                       <span className={styles.dividerLine} />
-                      <span className={styles.dividerLabel}>MAGMA ENGINEERED</span>
+                      <span className={styles.dividerLabel}>{t('products_page.cat_artificial_label')}</span>
                     </div>
                   </div>
 
@@ -353,7 +367,7 @@ const Products = () => {
                           />
                         </div>
                         <div className={styles.cardContent}>
-                          <h3 className={styles.productName}>{product.name}</h3>
+                          <h3 className={styles.productName}>{t(`products_page.items.${product.id.replace('-', '_')}.name`, product.name)}</h3>
                           {/* <p className={styles.productDesc}>{product.description}</p>
                           <p className={styles.productDetails}>{product.details}</p>
                           <div className={styles.cardFooter}>
@@ -380,14 +394,14 @@ const Products = () => {
           <div className={styles.ctaBox}>
             <div className={styles.ctaContent}>
               <h2 className={`${styles.ctaTitle} animate-cta`}>
-                Need Help Choosing the Right Stone?
+                {t('products_page.cta_title')}
               </h2>
               <p className={`${styles.ctaDesc} animate-cta`}>
-                Our stone consultants are here to guide you through materials, finishes, and specs. Get in touch with our team to find the perfect solution for your space.
+                {t('products_page.cta_desc')}
               </p>
               <div className="animate-cta">
                 <Link to="/contact" className={styles.ctaBtn}>
-                  Contact Us <ArrowUpRight strokeWidth={0.75} />
+                  {t('products_page.cta_button')} <ArrowUpRight strokeWidth={0.75} />
                 </Link>
               </div>
             </div>

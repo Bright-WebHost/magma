@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -37,6 +38,7 @@ const posts = [
 ];
 
 const BlogSection = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const swiperRef = useRef(null);
@@ -67,7 +69,7 @@ const BlogSection = () => {
       <div className="container">
         {/* Header */}
         <div className={styles.sectionHeader} ref={headingRef}>
-          <h2 className={styles.sectionTitle}>Latest Posts</h2>
+          <h2 className={styles.sectionTitle}>{t('misc.latest_posts')}</h2>
           <Link to="/blog" className={styles.allBtn}>
             All Articles ↗
           </Link>

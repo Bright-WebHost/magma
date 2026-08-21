@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import styles from './ProjectsSection.module.scss';
 import projectImg from '../../../../assets/images/img/14.webp';
@@ -27,6 +28,7 @@ const projects = [
 ];
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('Featured');
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
@@ -73,7 +75,7 @@ const ProjectsSection = () => {
       <div className="container">
         {/* Header row */}
         <div className={styles.sectionHeader} ref={headingRef}>
-          <h2 className={styles.sectionTitle}>Featured Projects</h2>
+          <h2 className={styles.sectionTitle}>{t('home_page.projects_section.heading')}</h2>
 
           {/* Filter Tabs + See All button */}
           <div className={styles.filterRow}>
@@ -84,12 +86,12 @@ const ProjectsSection = () => {
                   className={`${styles.filterTab} ${activeFilter === tab ? styles.active : ''}`}
                   onClick={() => setActiveFilter(tab)}
                 >
-                  {tab}
+                  {t(`home_page.projects_section.filters.${tab}`)}
                 </button>
               ))}
             </div>
             <Link to="/projects" className={styles.seeAllBtn}>
-              See All Projects 
+              {t('home_page.projects_section.see_all')} 
             </Link>
           </div>
         </div>
@@ -104,7 +106,7 @@ const ProjectsSection = () => {
             >
               {/* Project Image */}
               <div className={styles.cardImageWrap}>
-                <img src={project.image} alt={project.title} className={styles.cardImage} />
+                <img src={project.image} alt={t(`home_page.projects_section.items.${index}.title`)} className={styles.cardImage} />
               </div>
 
               {/* Project Info */}
@@ -113,12 +115,12 @@ const ProjectsSection = () => {
                 <div className={styles.tagList}>
                   {project.tags.map((tag, i) => (
                     <span key={i} className={styles.tag}>
-                      {tag}
+                      {t(`home_page.projects_section.tags.${tag}`)}
                     </span>
                   ))}
                 </div>
-                <h3 className={styles.cardTitle}>{project.title}</h3>
-                <p className={styles.cardDesc}>{project.desc}</p>
+                <h3 className={styles.cardTitle}>{t(`home_page.projects_section.items.${index}.title`)}</h3>
+                <p className={styles.cardDesc}>{t(`home_page.projects_section.items.${index}.desc`)}</p>
               </div>
             </div>
           ))}

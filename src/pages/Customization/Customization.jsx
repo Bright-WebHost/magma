@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './Customization.module.scss';
@@ -153,6 +154,7 @@ const values = [
 // ─── Component ────────────────────────────────────────────────────────────────
 
 const Customization = () => {
+  const { t } = useTranslation();
   const [activeCapability, setActiveCapability] = useState(0);
   const [openFaq, setOpenFaq]                   = useState(null);
 
@@ -287,11 +289,11 @@ const Customization = () => {
         <div className="container">
           <div className={styles.heroInner} ref={heroInnerRef}>
             <div className={styles.heroBreadcrumb}>
-              <span>Home</span>
+              <span>{t('navbar.home')}</span>
               <span className={styles.sep}>/</span>
-              <span className={styles.active}>Customization</span>
+              <span className={styles.active}>{t('customization_page.breadcrumb')}</span>
             </div>
-            <h1 className={styles.heroTitle}>Customization</h1>
+            <h1 className={styles.heroTitle}>{t('customization_page.title')}</h1>
             {/* <p className={styles.heroSubtitle}>
               Have a project in mind? Our team is ready to listen, advise and deliver.
             </p> */}
@@ -313,7 +315,7 @@ const Customization = () => {
               </div>
               {/* <div className={styles.floatingCard}>
                 <span className={styles.floatNumber}>500<em>+</em></span>
-                <span className={styles.floatLabel}>Custom Projects<br />Completed</span>
+                <span className={styles.floatLabel}>{t('misc.custom_projects_completed_1')}<br />{t('misc.custom_projects_completed_2')}</span>
               </div> */}
             </div>
 
@@ -321,36 +323,33 @@ const Customization = () => {
             <div className={styles.introTextSide} ref={introTextRef}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Our Approach</span>
+                <span className={styles.metaLabel}>{t('customization_page.intro_label')}</span>
               </div>
 
               <h2 className={styles.introHeading}>
-                Every detail, precisely considered.
+                {t('customization_page.intro_heading')}
               </h2>
 
               <p className={styles.introLead}>
-                At Magma, customization is not an add-on — it is our core offering. Each project
-                begins with a deep understanding of your space, your lifestyle, and your vision.
+                {t('customization_page.intro_lead')}
               </p>
 
               <p className={styles.introBody}>
-                From a single kitchen countertop to a complete architectural installation, our team
-                brings the same meticulous attention to detail, the same precision fabrication, and
-                the same commitment to enduring quality. We translate your vision into stone.
+                {t('customization_page.intro_body')}
               </p>
 
               <div className={styles.statsRow}>
                 <div className={styles.statItem}>
                   <span className={styles.statNum}>70<em>+</em></span>
-                  <span className={styles.statText}>Years Experience</span>
+                  <span className={styles.statText}>{t('customization_page.stats.exp')}</span>
                 </div>
                 <div className={styles.statItem}>
                   <span className={styles.statNum}>40<em>+</em></span>
-                  <span className={styles.statText}>Stone Varieties</span>
+                  <span className={styles.statText}>{t('customization_page.stats.var')}</span>
                 </div>
                 <div className={styles.statItem}>
                   <span className={styles.statNum}>10,000<em>+</em></span>
-                  <span className={styles.statText}>Projects Delivered</span>
+                  <span className={styles.statText}>{t('customization_page.stats.proj')}</span>
                 </div>
               </div>
 
@@ -370,8 +369,8 @@ const Customization = () => {
           {values.map((v, i) => (
             <div key={i} className={styles.valueItem} data-value="true">
               <div className={styles.valueIcon}>{v.icon}</div>
-              <h3 className={styles.valueTitle}>{v.title}</h3>
-              <p className={styles.valueDesc}>{v.desc}</p>
+              <h3 className={styles.valueTitle}>{t(`customization_page.values.${i}.title`)}</h3>
+              <p className={styles.valueDesc}>{t(`customization_page.values.${i}.desc`)}</p>
             </div>
           ))}
         </div>
@@ -383,10 +382,10 @@ const Customization = () => {
       <section className={styles.capabilitiesSection} ref={capRef}>
         <div className="container">
           <div className={styles.capHeader}>
-            <p className={styles.sectionLabel} data-cap-hdr="true">Capabilities</p>
-            <h2 className={styles.capHeading} data-cap-hdr="true">What We Craft</h2>
+            <p className={styles.sectionLabel} data-cap-hdr="true">{t('customization_page.capabilities.label')}</p>
+            <h2 className={styles.capHeading} data-cap-hdr="true">{t('customization_page.capabilities.heading')}</h2>
             <p className={styles.capSubtitle} data-cap-hdr="true">
-              From functional surfaces to architectural statements — every application, executed to perfection.
+              {t('customization_page.capabilities.subtitle')}
             </p>
           </div>
         </div>
@@ -407,9 +406,9 @@ const Customization = () => {
                 <div className={styles.capItemBody}>
                   <div className={styles.capIcon}>{cap.icon}</div>
                   <div className={styles.capItemText}>
-                    <h3 className={styles.capTitle}>{cap.title}</h3>
+                    <h3 className={styles.capTitle}>{t(`customization_page.capabilities.items.${i}.title`)}</h3>
                     <p className={`${styles.capDesc} ${activeCapability === i ? styles.capDescVisible : ''}`}>
-                      {cap.desc}
+                      {t(`customization_page.capabilities.items.${i}.desc`)}
                     </p>
                   </div>
                 </div>
@@ -425,9 +424,9 @@ const Customization = () => {
                 key={cap.id}
                 className={`${styles.capImageSlide} ${activeCapability === i ? styles.capSlideActive : ''}`}
               >
-                <img src={cap.image} alt={cap.title} loading="lazy" />
+                <img src={cap.image} alt={t(`customization_page.capabilities.items.${i}.title`)} loading="lazy" />
                 <div className={styles.capImageLabel}>
-                  <span>{cap.title}</span>
+                  <span>{t(`customization_page.capabilities.items.${i}.title`)}</span>
                 </div>
               </div>
             ))}
@@ -442,7 +441,7 @@ const Customization = () => {
         <div className="container">
 
           <div className={styles.processHeader}>
-            <p className={styles.sectionLabel}>How We Work</p>
+            <p className={styles.sectionLabel}>{t('customization_page.process.label')}</p>
           </div>
 
           <div className={styles.processGrid}>
@@ -455,14 +454,13 @@ const Customization = () => {
               <div className={styles.processImgContent}>
                 <div className={styles.processImgTag}>
                   <span className={styles.processTagDot} />
-                  <span className={styles.processTagText}>Our Process</span>
+                  <span className={styles.processTagText}>{t('customization_page.process.tag')}</span>
                 </div>
                 <h3 className={styles.processImgTitle}>
-                  From Raw Stone to Refined Masterpiece
+                  {t('customization_page.process.title')}
                 </h3>
                 <p className={styles.processImgBody}>
-                  Every project follows our meticulous four-step methodology — ensuring
-                  precision, transparency, and an outcome that surpasses expectations.
+                  {t('customization_page.process.desc')}
                 </p>
               </div>
             </div>
@@ -476,8 +474,8 @@ const Customization = () => {
                   ref={(el) => (stepCardsRef.current[i + 1] = el)}
                 >
                   <span className={styles.stepNum}>{step.num}</span>
-                  <h4 className={styles.stepTitle}>{step.title}</h4>
-                  <p className={styles.stepDesc}>{step.desc}</p>
+                  <h4 className={styles.stepTitle}>{t(`customization_page.process.steps.${i}.title`)}</h4>
+                  <p className={styles.stepDesc}>{t(`customization_page.process.steps.${i}.desc`)}</p>
                 </div>
               ))}
             </div>
@@ -492,7 +490,7 @@ const Customization = () => {
         <div className={styles.stripTrack}>
           {[...materialsList, ...materialsList].map((m, i) => (
             <span key={i} className={styles.stripItem}>
-              {m}<span className={styles.stripDot}>·</span>
+              {t(`customization_page.materials.${i % materialsList.length}`)}<span className={styles.stripDot}>·</span>
             </span>
           ))}
         </div>
@@ -506,31 +504,31 @@ const Customization = () => {
           <div className={styles.faqLayout}>
 
             <div className={styles.faqLeft}>
-              <p className={styles.sectionLabel} data-faq-hdr="true">FAQ</p>
+              <p className={styles.sectionLabel} data-faq-hdr="true">{t('customization_page.faq.label')}</p>
               <h2 className={styles.faqHeading} data-faq-hdr="true">
-                Common questions<br />answered.
+                {t('customization_page.faq.heading').split(' ').map((word, i) => (i === 2 ? <React.Fragment key={i}><br />{word} </React.Fragment> : word + ' '))}
               </h2>
               <p className={styles.faqIntro} data-faq-hdr="true">
-                Have a question not listed here? Our team is always ready to help.
+                {t('customization_page.faq.intro')}
               </p>
               <Link to="/contact" className={styles.faqLink} data-faq-hdr="true">
-                Ask Us Directly <ArrowUpRight strokeWidth={1} size={16} />
+                {t('customization_page.faq.link')} <ArrowUpRight strokeWidth={1} size={16} />
               </Link>
             </div>
 
             <div className={styles.faqRight}>
-              {faqs.map((faq) => (
+              {faqs.map((faq, i) => (
                 <div key={faq.id} className={`${styles.faqItem} ${openFaq === faq.id ? styles.faqOpen : ''}`}>
                   <button
                     className={styles.faqQuestion}
                     onClick={() => toggleFaq(faq.id)}
                     aria-expanded={openFaq === faq.id}
                   >
-                    <span>{faq.q}</span>
+                    <span>{t(`customization_page.faq.items.${i}.q`)}</span>
                     <ChevronDown className={styles.faqChevron} size={18} strokeWidth={1.5} />
                   </button>
                   <div className={styles.faqAnswer}>
-                    <p>{faq.a}</p>
+                    <p>{t(`customization_page.faq.items.${i}.a`)}</p>
                   </div>
                 </div>
               ))}
@@ -549,18 +547,17 @@ const Customization = () => {
             <div className={styles.ctaTextBlock}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Ready to Begin?</span>
+                <span className={styles.metaLabel}>{t('customization_page.cta.label')}</span>
               </div>
               <h2 className={styles.ctaHeading}>
-                Let's Bring Your Stone Vision to Life
+                {t('customization_page.cta.heading')}
               </h2>
               <p className={styles.ctaDesc}>
-                Speak with one of our stone specialists today and receive a personalised
-                quote tailored to your project — no obligation, just expertise.
+                {t('customization_page.cta.desc')}
               </p>
             </div>
             <Link to="/contact" className={styles.ctaButton}>
-              Get In Touch <ArrowUpRight strokeWidth={0.75} />
+              {t('customization_page.cta.btn')} <ArrowUpRight strokeWidth={0.75} />
             </Link>
           </div>
         </div>

@@ -67,8 +67,8 @@ const ContactCTA = () => {
   return (
     <section className={styles.contactCTA} ref={sectionRef}>
       <div className="container">
-        <a href="mailto:hello@archin.co" className={styles.emailLink} ref={emailRef}>
-          hello@archin.co
+        <a href="mailto:hello@magmastone.com" className={styles.emailLink} ref={emailRef}>
+          hello@magmastone.com
         </a>
         <p className={styles.subtitle} ref={textRef}>
           Let us help your dream<br />become reality

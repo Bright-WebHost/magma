@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { gsap } from '../../../../utils/gsapConfig';
 import styles from './MarqueeSection.module.scss';
 
 const MarqueeSection = () => {
+  const { t } = useTranslation();
   const track1Ref = useRef(null);
   const track2Ref = useRef(null);
 
@@ -33,7 +35,7 @@ const MarqueeSection = () => {
     };
   }, []);
 
-  const words = ['Creative', 'Flexiable', 'Dedicated', 'Innovative', 'Creative', 'Flexiable', 'Dedicated', 'Innovative'];
+  const words = t('home_page.marquee_section.words', { returnObjects: true });
 
   return (
     <div className={styles.marqueeSection}>

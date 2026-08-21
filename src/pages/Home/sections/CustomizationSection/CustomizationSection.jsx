@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { gsap, ScrollTrigger } from '../../../../utils/gsapConfig';
 import styles from './CustomizationSection.module.scss';
 import { ArrowUpRight } from 'lucide-react';
@@ -90,6 +91,7 @@ const customizations = [
 ];
 
 const CustomizationSection = () => {
+  const { t } = useTranslation();
   const sectionRef  = useRef(null);
   const headingRef  = useRef(null);
   const labelRef    = useRef(null);
@@ -145,10 +147,10 @@ const CustomizationSection = () => {
         {/* ── Header ─────────────────────────────────────────────────── */}
         <div className={styles.sectionHeader}>
           <div className={styles.headerLeft}>
-            <p className={styles.sectionLabel} ref={labelRef}>Customization</p>
+            <p className={styles.sectionLabel} ref={labelRef}>{t('home_page.customization_section.label')}</p>
             <h2 className={styles.sectionHeading} ref={headingRef}>
-              <span>Crafted For </span>
-              <span>Your Vision</span>
+              <span>{t('home_page.customization_section.heading1')}</span>
+              <span>{t('home_page.customization_section.heading2')}</span>
             </h2>
           </div>
           <div className={styles.headerRight}>
@@ -174,7 +176,7 @@ const CustomizationSection = () => {
               <div className={styles.cardImageWrap}>
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={t(`home_page.customization_section.items.${i}.title`)}
                   className={styles.cardImage}
                   loading="lazy"
                 />
@@ -183,17 +185,17 @@ const CustomizationSection = () => {
               </div>
 
               {/* Tag pill (top-left) */}
-              <span className={styles.cardTag}>{item.tag}</span>
+              <span className={styles.cardTag}>{t(`home_page.customization_section.items.${i}.tag`)}</span>
 
               {/* Arrow (top-right) */}
-              <button className={styles.cardArrow} aria-label={`Explore ${item.title}`}>
+              <button className={styles.cardArrow} aria-label={`Explore ${t(`home_page.customization_section.items.${i}.title`)}`}>
                 <ArrowUpRight strokeWidth={1.2} size={18} />
               </button>
 
               {/* Content block (bottom) */}
               <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>{item.title}</h3>
-                <p className={styles.cardDesc}>{item.desc}</p>
+                <h3 className={styles.cardTitle}>{t(`home_page.customization_section.items.${i}.title`)}</h3>
+                <p className={styles.cardDesc}>{t(`home_page.customization_section.items.${i}.desc`)}</p>
               </div>
             </div>
           ))}

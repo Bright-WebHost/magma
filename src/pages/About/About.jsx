@@ -384,24 +384,24 @@ const About = () => {
                 <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 17L12 22L22 17" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 12L12 17L22 12" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
               <span className={styles.valueBig}>10,000<em>+</em></span>
-              <span className={styles.valueTitle}>Projects Delivered</span>
-              <p className={styles.valueDesc}>From private residences to large-scale commercial and hospitality projects.</p>
+              <span className={styles.valueTitle}>{t('misc.projects_delivered')}</span>
+              <p className={styles.valueDesc}>{t('misc.projects_delivered_desc')}</p>
             </div>
             <div className={styles.valueItem}>
               <div className={styles.valueIcon}>
                 <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#0B7887" strokeWidth="1.5"/><path d="M12 8V12L15 15" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
               <span className={styles.valueBig}>70<em>+</em></span>
-              <span className={styles.valueTitle}>Years of Experience</span>
-              <p className={styles.valueDesc}>Heritage built over decades of experience in the stone industry.</p>
+              <span className={styles.valueTitle}>{t('misc.years_experience')}</span>
+              <p className={styles.valueDesc}>{t('misc.years_experience_desc')}</p>
             </div>
             <div className={styles.valueItem}>
               <div className={styles.valueIcon}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/><circle cx="9" cy="7" r="4" stroke="#0B7887" strokeWidth="1.5"/><path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/><path d="M16 3.13C17.7699 3.58317 19.0078 5.17822 19.0078 7.005C19.0078 8.83178 17.7699 10.4268 16 10.88" stroke="#0B7887" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
               <span className={styles.valueBig}>3</span>
-              <span className={styles.valueTitle}>Generations</span>
-              <p className={styles.valueDesc}>Three generations of family experience with an international vision.</p>
+              <span className={styles.valueTitle}>{t('misc.generations')}</span>
+              <p className={styles.valueDesc}>{t('misc.generations_desc')}</p>
             </div>
           </div>
         </div>
@@ -415,8 +415,8 @@ const About = () => {
 
           {/* Header */}
           <div className={styles.mvHeader} ref={mvHeaderRef}>
-            <p className={styles.mvLabel}>Purpose & Direction</p>
-            <h2 className={styles.mvTitle}>Mission & Vision</h2>
+            <p className={styles.mvLabel}>{t('misc.purpose_direction')}</p>
+            <h2 className={styles.mvTitle}>{t('misc.mission_vision')}</h2>
             <p className={styles.mvSubtitle}>
               Two pillars that guide every decision, every design, and every stone we lay.
             </p>
@@ -510,19 +510,17 @@ const About = () => {
             <div className={styles.teamTextBlock}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Our People</span>
+                <span className={styles.metaLabel}>{t('misc.our_people')}</span>
               </div>
               <h2 className={styles.teamHeading}>
-                The Artisans Behind Every Surface
+                {t('misc.artisans_title')}
               </h2>
               <p className={styles.teamDesc}>
-                Our team of master craftsmen, stone specialists, and design consultants
-                bring decades of collective expertise to every project. We are stone lovers
-                first, and professionals second.
+                {t('misc.artisans_desc')}
               </p>
             </div>
             <Link to="/contact" className={styles.teamCta}>
-              Get In Touch <ArrowUpRight strokeWidth={0.75} />
+              {t('misc.get_in_touch')} <ArrowUpRight strokeWidth={0.75} />
             </Link>
           </div>
         </div>

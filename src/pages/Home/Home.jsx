@@ -4,7 +4,6 @@ import HeroSlider from './sections/HeroSlider/HeroSlider';
 import AboutSection from './sections/AboutSection/AboutSection';
 import ServicesSection from './sections/ServicesSection/ServicesSection';
 import ProcessSection from './sections/ProcessSection/ProcessSection';
-import ProductsSection from './sections/ProductsSection/ProductsSection';
 import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
 import CustomizationSection from './sections/CustomizationSection/CustomizationSection';
 import TestimonialsSection from './sections/TestimonialsSection/TestimonialsSection';
@@ -36,8 +35,6 @@ const Home = () => {
         {/* 2. About Section - Est. 1986, tilted image, years stat */}
         <AboutSection />
 
-        {/* Products - Nature Paints The Best Masterpieces */}
-        <ProductsSection />
 
         {/* 3. Services Section - 4-col grid with icons */}
         <ServicesSection />
