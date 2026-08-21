@@ -174,11 +174,6 @@
   border-radius: 20px;
   padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-
-  .sticky & {
-    background: rgba(30, 30, 32, 0.05);
-    border-color: rgba(30, 30, 32, 0.1);
-  }
 }
 
 .langBtn {
@@ -193,10 +188,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  .sticky & {
-    color: rgba(30, 30, 32, 0.7);
-  }
-
   &.active {
     background: $color-orange; /* Uses the global theme color (Teal) */
     color: $color-white !important;
@@ -204,10 +195,6 @@
 
   &:hover:not(.active) {
     color: $color-white;
-    
-    .sticky & {
-      color: $color-dark;
-    }
   }
 }
 
