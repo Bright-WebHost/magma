@@ -813,10 +813,10 @@
 
 .teamStrip {
   background-color: $color-beige;
-  padding: 100px 0;
+  padding: 20px 0 100px;
 
   @media (max-width: $breakpoint-md) {
-    padding: 70px 0;
+    padding: 0 0 70px;
   }
 }
 
