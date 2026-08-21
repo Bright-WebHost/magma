@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 import logo from '../../assets/images/img/logo.png';
 import styles from './Footer.module.scss';
 

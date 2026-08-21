@@ -6,9 +6,7 @@ import {
   FaMagnifyingGlass, 
   FaXmark, 
   FaFacebookF, 
-  FaTwitter, 
-  FaInstagram, 
-  FaLinkedinIn 
+  FaInstagram 
 } from 'react-icons/fa6';
 import styles from './Navbar.module.scss';
 
