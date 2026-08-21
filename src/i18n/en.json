@@ -83,5 +83,487 @@
         "desc": "We work closely with our clients to understand their needs and bring their vision to life."
       }
     ]
+  },
+  "footer": {
+    "desc": "A heritage built over more than 70 years of experience in the stone industry, bringing nature's finest materials to your spaces.",
+    "services_title": "Services",
+    "marble_fabrication": "Marble Fabrication",
+    "stone_installation": "Stone Installation",
+    "customization": "Customization",
+    "surface_restoration": "Surface Restoration",
+    "quick_links": "Quick Links",
+    "contact_title": "Contact Us",
+    "address": "4 Rue du 7 Decembre, Abidjan, Côte d’Ivoire",
+    "phone": "+225 44884422",
+    "email": "hello@magmastone.com",
+    "copyright": "MAGMA Stone. All rights reserved."
+  },
+  "products_page": {
+    "title": "Our Products",
+    "breadcrumb": "Products",
+    "search_placeholder": "Search products, materials...",
+    "filter_all": "All Stones",
+    "filter_natural": "Natural Stones",
+    "filter_artificial": "Artificial Stones",
+    "no_results_title": "No stones match your criteria",
+    "no_results_desc": "Try resetting the search query or changing active category filter.",
+    "reset_filters": "Reset Filters",
+    "cat_natural": "Natural Stones",
+    "cat_natural_label": "MAGMA NATURAL",
+    "cat_artificial": "Artificial Stones",
+    "cat_artificial_label": "MAGMA ENGINEERED",
+    "cta_title": "Need Help Choosing the Right Stone?",
+    "cta_desc": "Our stone consultants are here to guide you through materials, finishes, and specs. Get in touch with our team to find the perfect solution for your space.",
+    "cta_button": "Contact Us",
+    "items": {
+      "marble": {
+        "name": "Marble"
+      },
+      "granite": {
+        "name": "Granite"
+      },
+      "quartzite": {
+        "name": "Quartzite"
+      },
+      "onyx": {
+        "name": "Onyx"
+      },
+      "basalt": {
+        "name": "Basalt"
+      },
+      "limestone": {
+        "name": "Limestone"
+      },
+      "rak": {
+        "name": "RAK"
+      },
+      "ceramique_slabs": {
+        "name": "Ceramique Slabs"
+      },
+      "quartz": {
+        "name": "Quartz"
+      },
+      "terrazzo": {
+        "name": "Terrazzo"
+      }
+    }
+  },
+  "services_page": {
+    "title": "Our Services",
+    "breadcrumb": "Services",
+    "bento_label": "Our Specialisations",
+    "bento_title": "Stone Solutions for Every Vision",
+    "bento_items": {
+      "marble_fab": "Supply",
+      "marble_fab_desc": "Sourcing premium materials from around the world to meet your exact specifications.",
+      "proj_comp": "Projects Completed",
+      "stone_inst": "Manufacturing (cutting and polishing)",
+      "stone_inst_desc": "Precision cutting, shaping and finishing tailored to your exact specifications.",
+      "stone_var": "Stone Varieties",
+      "generations": "Generations",
+      "design_cons": "Installation",
+      "design_cons_desc": "Flawless on-site installation by our certified craftsmen.",
+      "years_exp": "Years Experience",
+      "surf_rest": "Maintenance",
+      "surf_rest_desc": "Professional care to preserve the beauty and longevity of your stone surfaces."
+    },
+    "process_label": "How We Work",
+    "process_tag": "Our Process",
+    "process_title": "From Raw Stone to Refined Masterpiece",
+    "process_desc": "Every project follows our meticulous four-step methodology — ensuring precision, transparency and an outcome that surpasses expectations.",
+    "process_steps": {
+      "step1_title": "Discovery",
+      "step1_desc": "We listen carefully to understand your vision, space requirements and budget parameters.",
+      "step2_title": "Selection",
+      "step2_desc": "Browse our exclusive stone library and receive expert guidance to choose the perfect material.",
+      "step3_title": "Fabrication",
+      "step3_desc": "Precision cutting and finishing in our state-of-the-art facility, crafted to exact specifications.",
+      "step4_title": "Installation",
+      "step4_desc": "Flawless on-site installation by our master craftsmen with minimal disruption to your space."
+    },
+    "cta_label": "Ready to Begin?",
+    "cta_title": "Let's Bring Your Stone Vision to Life",
+    "cta_desc": "Speak with one of our stone specialists today and receive a personalised quote tailored to your project — no obligation, just expertise.",
+    "cta_button": "Get In Touch"
+  },
+  "customization_page": {
+    "title": "Customization",
+    "breadcrumb": "Customization",
+    "intro_label": "Our Approach",
+    "intro_heading": "Every detail, precisely considered.",
+    "intro_lead": "At Magma, customization is not an add-on — it is our core offering. Each project begins with a deep understanding of your space, your lifestyle, and your vision.",
+    "intro_body": "From a single kitchen countertop to a complete architectural installation, our team brings the same meticulous attention to detail, the same precision fabrication, and the same commitment to enduring quality. We translate your vision into stone.",
+    "stats": {
+      "exp": "Years Experience",
+      "var": "Stone Varieties",
+      "proj": "Projects Delivered"
+    },
+    "values": [
+      {
+        "title": "Unmatched Precision",
+        "desc": "Every cut, edge, and surface is executed with surgical accuracy by our master craftsmen."
+      },
+      {
+        "title": "On-Time Delivery",
+        "desc": "We commit to project timelines and deliver without compromise on quality or schedule."
+      },
+      {
+        "title": "10-Year Warranty",
+        "desc": "Our installations carry a decade-long guarantee covering craftsmanship and materials."
+      },
+      {
+        "title": "Dedicated Support",
+        "desc": "A single point of contact guides you from first consultation through to final sign-off."
+      }
+    ],
+    "capabilities": {
+      "label": "Capabilities",
+      "heading": "What We Craft",
+      "subtitle": "From functional surfaces to architectural statements — every application, executed to perfection.",
+      "items": [
+        {
+          "title": "Kitchen Countertops",
+          "desc": "Custom-crafted surfaces that combine durability, functionality, and timeless elegance in every kitchen environment."
+        },
+        {
+          "title": "Vanity Tops",
+          "desc": "Premium stone vanities tailored to complement sophisticated interior spaces with precision edge profiling."
+        },
+        {
+          "title": "Staircases",
+          "desc": "Precision-finished stone staircases that create a grand architectural statement and a lasting first impression."
+        },
+        {
+          "title": "Wall Cladding",
+          "desc": "Elegant natural stone panels that add depth, texture, and refined character to any interior or exterior wall."
+        },
+        {
+          "title": "Flooring Solutions",
+          "desc": "Seamless stone flooring systems crafted for both residential and commercial environments with flawless finish."
+        },
+        {
+          "title": "Custom Furniture",
+          "desc": "Exclusive marble furniture pieces designed for luxury interiors — from dining tables to fireplace surrounds."
+        }
+      ]
+    },
+    "process": {
+      "label": "How We Work",
+      "tag": "Our Process",
+      "title": "From Raw Stone to Refined Masterpiece",
+      "desc": "Every project follows our meticulous four-step methodology — ensuring precision, transparency, and an outcome that surpasses expectations.",
+      "steps": [
+        {
+          "title": "Consultation",
+          "desc": "A one-on-one session to understand your vision, functional needs, and aesthetic preferences in depth."
+        },
+        {
+          "title": "Stone Selection",
+          "desc": "Browse our curated stone library with expert guidance to select the perfect material, colour, and finish."
+        },
+        {
+          "title": "Custom Fabrication",
+          "desc": "Our master craftsmen precisely cut, shape, and finish each piece to your exact specifications in our facility."
+        },
+        {
+          "title": "Delivery & Install",
+          "desc": "Flawless on-site installation by certified specialists, ensuring seamless joints and an impeccable result."
+        }
+      ]
+    },
+    "materials": [
+      "Marble",
+      "Granite",
+      "Quartzite",
+      "Onyx",
+      "Basalt",
+      "Limestone",
+      "Quartz",
+      "Ceramique",
+      "Terrazzo"
+    ],
+    "faq": {
+      "label": "FAQ",
+      "heading": "Common questions answered.",
+      "intro": "Have a question not listed here? Our team is always ready to help.",
+      "link": "Ask Us Directly",
+      "items": [
+        {
+          "q": "What stone types are available for custom projects?",
+          "a": "We offer an extensive selection including marble, granite, quartzite, onyx, basalt, limestone, and engineered surfaces like quartz and ceramique slabs. Our team can source specialty stones on request."
+        },
+        {
+          "q": "How long does a custom fabrication project take?",
+          "a": "Timelines vary by project complexity. Simple countertop replacements can be completed in 2–3 weeks, while larger custom installations such as staircases or feature walls may take 4–8 weeks from approval to installation."
+        },
+        {
+          "q": "Do you offer design consultation before committing?",
+          "a": "Absolutely. Our design consultation is a complimentary service where our stone specialists work with you to explore options, review samples, and create detailed drawings before any fabrication begins."
+        },
+        {
+          "q": "Can you match existing stone in my home?",
+          "a": "In most cases, yes. We maintain an extensive network of international quarries and stone suppliers. Bring us a sample or high-resolution photographs and our team will work to find the closest possible match."
+        },
+        {
+          "q": "What edge profiles are available for countertops?",
+          "a": "We offer a full range of edge profiles — from classic bullnose and bevelled to waterfall, mitered, and ogee profiles. Custom edge profiles can also be machined to your precise specification."
+        },
+        {
+          "q": "Do you handle both residential and commercial projects?",
+          "a": "Yes. We serve homeowners, interior designers, architects, and commercial developers alike. Our production capacity and project management systems are built for projects of every scale."
+        }
+      ]
+    },
+    "cta": {
+      "label": "Ready to Begin?",
+      "heading": "Let's Bring Your Stone Vision to Life",
+      "desc": "Speak with one of our stone specialists today and receive a personalised quote tailored to your project — no obligation, just expertise.",
+      "btn": "Get In Touch"
+    }
+  },
+  "projects_page": {
+    "header_badge": "10,000+ PROJECTS",
+    "quote_btn": "Request a Quote",
+    "filters": {
+      "All": "All",
+      "Residential": "Residential",
+      "Commercial": "Commercial",
+      "Hospitality": "Hospitality",
+      "Restoration": "Restoration"
+    },
+    "badges": {
+      "RESIDENTIAL": "RESIDENTIAL",
+      "COMMERCIAL": "COMMERCIAL",
+      "HOSPITALITY": "HOSPITALITY"
+    },
+    "items": [
+      {
+        "title": "Residential Villa",
+        "subtitle": "Custom marble flooring and staircase"
+      },
+      {
+        "title": "Corporate Headquarters",
+        "subtitle": "Granite exterior cladding and lobby"
+      },
+      {
+        "title": "Luxury Hotel",
+        "subtitle": "Onyx feature walls and custom vanities"
+      },
+      {
+        "title": "Private Residence",
+        "subtitle": "Quartzite countertops and outdoor patio"
+      },
+      {
+        "title": "Boutique Store",
+        "subtitle": "Terrazzo flooring and display counters"
+      }
+    ],
+    "cta": {
+      "label": "Start Your Project",
+      "heading": "Ready to Transform Your Space?",
+      "desc": "Our team is ready to bring your vision to life with premium stone craftsmanship and unmatched installation expertise.",
+      "btn": "Get In Touch"
+    }
+  },
+  "contact_page": {
+    "title": "Get In Touch",
+    "breadcrumb": "Contact",
+    "form": {
+      "label": "Send a Message",
+      "heading": "Let's Talk About Your Project",
+      "success_title": "Message Sent!",
+      "success_desc": "Thank you for reaching out. Our team will get back to you within 24 hours.",
+      "success_btn": "Send Another Message",
+      "name_label": "Full Name",
+      "name_placeholder": "John Doe",
+      "email_label": "Email Address",
+      "email_placeholder": "john@example.com",
+      "phone_label": "Phone Number",
+      "phone_placeholder": "+225 44884422",
+      "subject_label": "Subject",
+      "subject_default": "Select a subject",
+      "subjects": {
+        "marble": "Marble Fabrication",
+        "installation": "Stone Installation",
+        "consultation": "Design Consultation",
+        "restoration": "Surface Restoration",
+        "other": "Other Enquiry"
+      },
+      "message_label": "Your Message",
+      "message_placeholder": "Tell us about your project — space type, stone preferences, timeline...",
+      "submit_btn": "Send Message"
+    },
+    "side": {
+      "label": "Contact Info",
+      "heading": "We'd Love to Hear From You",
+      "desc": "Whether you're planning a new build, renovation or restoration — our stone specialists are ready to guide you from concept to completion.",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "address_value": "4 Rue du 7 Decembre,<br/>Abidjan, Côte d’Ivoire"
+    }
+  },
+  "home_page": {
+    "services_section": {
+      "label": "OUR SERVICES",
+      "items": [
+        {
+          "title": "Supply",
+          "tags": "Planning, 3D Visuallization, Landscape Design, Structural Drawing, CGI, Construction Supervision"
+        },
+        {
+          "title": "Manufacturing ( cutting and polishing )",
+          "tags": "Interior Design, Exterior Design, Rennovation, Sustainable Design, Installation, Plumbing System, 3D Experience"
+        },
+        {
+          "title": "Installation",
+          "tags": "Bespoke Furniture, Material Supply, Online Store, Distribute, 3D Modeling"
+        },
+        {
+          "title": "Maintenance",
+          "tags": "Project Analysis, Bid Documentation, Construction Supervisor"
+        }
+      ]
+    },
+    "customization_section": {
+      "label": "Customization",
+      "heading1": "Crafted For ",
+      "heading2": "Your Vision",
+      "items": [
+        {
+          "title": "Kitchen Countertops",
+          "tag": "Interior",
+          "desc": "Custom-crafted surfaces combining durability, functionality, and timeless elegance."
+        },
+        {
+          "title": "Vanity Tops",
+          "tag": "Bathroom",
+          "desc": "Premium stone vanities tailored to complement sophisticated interior spaces."
+        },
+        {
+          "title": "Staircases",
+          "tag": "Architecture",
+          "desc": "Precision-finished stone staircases that create a grand architectural statement."
+        },
+        {
+          "title": "Custom Furniture",
+          "tag": "Furniture",
+          "desc": "Exclusive marble furniture pieces designed for distinctive luxury interiors."
+        },
+        {
+          "title": "Wall Cladding",
+          "tag": "Exterior",
+          "desc": "Elegant natural stone applications that add depth, texture, and character."
+        },
+        {
+          "title": "Flooring Solutions",
+          "tag": "Flooring",
+          "desc": "Seamless flooring systems for both residential and commercial environments."
+        },
+        {
+          "title": "Reception Counters",
+          "tag": "Commercial",
+          "desc": "Statement reception areas built to leave a lasting first impression."
+        },
+        {
+          "title": "Dining Tables",
+          "tag": "Furniture",
+          "desc": "Handcrafted stone tables that merge functionality with refined aesthetics."
+        },
+        {
+          "title": "Feature Walls",
+          "tag": "Interior",
+          "desc": "Architectural focal points that celebrate the beauty of natural materials."
+        },
+        {
+          "title": "Bespoke Projects",
+          "tag": "Custom",
+          "desc": "Fully customized stone creations tailored to unique client visions."
+        }
+      ]
+    },
+    "projects_section": {
+      "heading": "Featured Projects",
+      "see_all": "See All Projects",
+      "filters": {
+        "Featured": "Featured",
+        "Architecture": "Architecture",
+        "Interior": "Interior",
+        "Landscape": "Landscape",
+        "Furniture": "Furniture"
+      },
+      "items": [
+        {
+          "title": "Presidential Lounge",
+          "desc": "Premium stone supply and flawless installation for the exclusive airport presidential lounge."
+        },
+        {
+          "title": "Luxury Residential Villa",
+          "desc": "High-end marble fabrication and customized surface finishes tailored for a private residence."
+        }
+      ],
+      "tags": {
+        "Architecture": "Architecture",
+        "Interior": "Interior",
+        "Landscape": "Landscape",
+        "Furniture": "Furniture"
+      }
+    },
+    "marquee_section": {
+      "words": [
+        "Creative",
+        "Flexible",
+        "Dedicated",
+        "Innovative",
+        "Creative",
+        "Flexible",
+        "Dedicated",
+        "Innovative"
+      ]
+    }
+  },
+  "misc": {
+    "projects_delivered": "Projects Delivered",
+    "projects_delivered_desc": "From private residences to large-scale commercial and hospitality projects.",
+    "years_experience": "Years of Experience",
+    "years_experience_desc": "Heritage built over decades of experience in the stone industry.",
+    "generations": "Generations",
+    "generations_desc": "Three generations of family experience with an international vision.",
+    "purpose_direction": "Purpose & Direction",
+    "mission_vision": "Mission & Vision",
+    "our_people": "Our People",
+    "call_us": "Call Us",
+    "email_us": "Email Us",
+    "visit_us": "Visit Us",
+    "address_line1": "4 Rue du 7 Decembre",
+    "address_line2": "Abidjan, Côte d’Ivoire",
+    "working_hours": "Working Hours",
+    "hours_week": "Mon – Sat: 9:00 AM – 6:00 PM",
+    "hours_sun": "Sunday: Closed",
+    "find_us": "Find Us",
+    "studio_location": "Our Studio Location",
+    "studio_name": "Magma Stone Studio",
+    "studio_address_short": "4 Rue du 7 Decembre, Abidjan",
+    "custom_projects_completed_1": "Custom Projects",
+    "custom_projects_completed_2": "Completed",
+    "years_of": "Years of",
+    "excellence": "Excellence",
+    "what_we_offer": "What We Offer",
+    "est_1953": "Est. 1953",
+    "latest_posts": "Latest Posts",
+    "products_label": "PRODUCTS",
+    "prod_line1": "Nature Paints",
+    "prod_line2": "The Best",
+    "prod_line3": "Masterpieces For Us",
+    "elite_stone": "ELITE STONE",
+    "scroll_reveal": "Scroll to reveal",
+    "years_craftsmanship": "Years of Craftsmanship",
+    "industry_awards": "Industry Awards",
+    "blog_page_title": "News & Articles Page",
+    "blog_page_desc": "Latest company news, architecture trends, articles are listed here.",
+    "page_not_found": "Page Not Found",
+    "artisans_title": "The Artisans Behind Every Surface",
+    "artisans_desc": "Our team of master craftsmen, stone specialists, and design consultants bring decades of collective expertise to every project. We are stone lovers first, and professionals second.",
+    "get_in_touch": "Get In Touch"
   }
 }

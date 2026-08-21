@@ -83,5 +83,487 @@
         "desc": "Nous travaillons en étroite collaboration avec nos clients afin de comprendre leurs besoins et de donner vie à leur vision."
       }
     ]
+  },
+  "footer": {
+    "desc": "Un héritage construit sur plus de 70 ans d'expérience dans l'industrie de la pierre, apportant les meilleurs matériaux de la nature à vos espaces.",
+    "services_title": "Services",
+    "marble_fabrication": "Fabrication de marbre",
+    "stone_installation": "Pose de pierre",
+    "customization": "Personnalisation",
+    "surface_restoration": "Restauration de surface",
+    "quick_links": "Liens rapides",
+    "contact_title": "Contactez-nous",
+    "address": "4 Rue du 7 Decembre, Abidjan, Côte d’Ivoire",
+    "phone": "+225 44884422",
+    "email": "hello@magmastone.com",
+    "copyright": "MAGMA Stone. Tous droits réservés."
+  },
+  "products_page": {
+    "title": "Nos Produits",
+    "breadcrumb": "Produits",
+    "search_placeholder": "Rechercher des produits, matériaux...",
+    "filter_all": "Toutes les pierres",
+    "filter_natural": "Pierres naturelles",
+    "filter_artificial": "Pierres artificielles",
+    "no_results_title": "Aucune pierre ne correspond à vos critères",
+    "no_results_desc": "Essayez de réinitialiser la requête de recherche ou de modifier le filtre de catégorie actif.",
+    "reset_filters": "Réinitialiser les filtres",
+    "cat_natural": "Pierres naturelles",
+    "cat_natural_label": "MAGMA NATUREL",
+    "cat_artificial": "Pierres artificielles",
+    "cat_artificial_label": "MAGMA TECHNIQUE",
+    "cta_title": "Besoin d'aide pour choisir la bonne pierre ?",
+    "cta_desc": "Nos consultants en pierre sont là pour vous guider sur les matériaux, les finitions et les spécifications. Contactez notre équipe pour trouver la solution parfaite pour votre espace.",
+    "cta_button": "Contactez-nous",
+    "items": {
+      "marble": {
+        "name": "Marbre"
+      },
+      "granite": {
+        "name": "Granit"
+      },
+      "quartzite": {
+        "name": "Quartzite"
+      },
+      "onyx": {
+        "name": "Onyx"
+      },
+      "basalt": {
+        "name": "Basalte"
+      },
+      "limestone": {
+        "name": "Pierre calcaire"
+      },
+      "rak": {
+        "name": "RAK"
+      },
+      "ceramique_slabs": {
+        "name": "Plaques de céramique"
+      },
+      "quartz": {
+        "name": "Quartz"
+      },
+      "terrazzo": {
+        "name": "Terrazzo"
+      }
+    }
+  },
+  "services_page": {
+    "title": "Nos Services",
+    "breadcrumb": "Services",
+    "bento_label": "Nos Spécialisations",
+    "bento_title": "Des Solutions en Pierre pour Chaque Vision",
+    "bento_items": {
+      "marble_fab": "Fourniture",
+      "marble_fab_desc": "Approvisionnement de matériaux de première qualité du monde entier pour répondre à vos spécifications exactes.",
+      "proj_comp": "Projets réalisés",
+      "stone_inst": "Fabrication (découpe et polissage)",
+      "stone_inst_desc": "Découpe, façonnage et finition de précision adaptés à vos spécifications exactes.",
+      "stone_var": "Variétés de pierres",
+      "generations": "Générations",
+      "design_cons": "Pose",
+      "design_cons_desc": "Pose impeccable sur site par nos artisans certifiés.",
+      "years_exp": "Années d'expérience",
+      "surf_rest": "Entretien",
+      "surf_rest_desc": "Soins professionnels pour préserver la beauté et la longévité de vos surfaces en pierre."
+    },
+    "process_label": "Comment Nous Travaillons",
+    "process_tag": "Notre Processus",
+    "process_title": "De la Pierre Brute au Chef-d'Œuvre Raffiné",
+    "process_desc": "Chaque projet suit notre méthodologie méticuleuse en quatre étapes — garantissant précision, transparence et un résultat qui dépasse vos attentes.",
+    "process_steps": {
+      "step1_title": "Découverte",
+      "step1_desc": "Nous écoutons attentivement pour comprendre votre vision, les exigences de l'espace et les paramètres de budget.",
+      "step2_title": "Sélection",
+      "step2_desc": "Parcourez notre bibliothèque exclusive de pierres et recevez des conseils d'experts pour choisir le matériau parfait.",
+      "step3_title": "Fabrication",
+      "step3_desc": "Découpe et finition de précision dans notre installation à la pointe de la technologie, façonnées selon les spécifications exactes.",
+      "step4_title": "Pose",
+      "step4_desc": "Pose impeccable sur site par nos maîtres artisans avec un minimum de perturbations dans votre espace."
+    },
+    "cta_label": "Prêt à Commencer ?",
+    "cta_title": "Donnons Vie à Votre Vision en Pierre",
+    "cta_desc": "Parlez avec l'un de nos spécialistes de la pierre aujourd'hui et recevez un devis personnalisé adapté à votre projet — sans engagement, juste de l'expertise.",
+    "cta_button": "Contactez-nous"
+  },
+  "customization_page": {
+    "title": "Personnalisation",
+    "breadcrumb": "Personnalisation",
+    "intro_label": "Notre Approche",
+    "intro_heading": "Chaque détail, précisément considéré.",
+    "intro_lead": "Chez Magma, la personnalisation n'est pas une option — c'est le cœur de notre offre. Chaque projet commence par une compréhension approfondie de votre espace, de votre mode de vie et de votre vision.",
+    "intro_body": "Qu'il s'agisse d'un simple plan de travail de cuisine ou d'une installation architecturale complète, notre équipe apporte la même attention méticuleuse aux détails, la même précision de fabrication et le même engagement envers une qualité durable. Nous traduisons votre vision en pierre.",
+    "stats": {
+      "exp": "Années d'expérience",
+      "var": "Variétés de pierres",
+      "proj": "Projets livrés"
+    },
+    "values": [
+      {
+        "title": "Précision inégalée",
+        "desc": "Chaque coupe, bord et surface est exécuté avec une précision chirurgicale par nos maîtres artisans."
+      },
+      {
+        "title": "Livraison à temps",
+        "desc": "Nous nous engageons sur les délais des projets et livrons sans compromis sur la qualité ou le calendrier."
+      },
+      {
+        "title": "Garantie de 10 ans",
+        "desc": "Nos installations bénéficient d'une garantie d'une décennie couvrant la fabrication et les matériaux."
+      },
+      {
+        "title": "Support dédié",
+        "desc": "Un point de contact unique vous accompagne de la première consultation jusqu'à la validation finale."
+      }
+    ],
+    "capabilities": {
+      "label": "Capacités",
+      "heading": "Ce Que Nous Fabriquons",
+      "subtitle": "Des surfaces fonctionnelles aux déclarations architecturales — chaque application est exécutée à la perfection.",
+      "items": [
+        {
+          "title": "Plans de travail de cuisine",
+          "desc": "Des surfaces sur mesure qui allient durabilité, fonctionnalité et élégance intemporelle dans chaque environnement de cuisine."
+        },
+        {
+          "title": "Plans de toilette",
+          "desc": "Des meubles-lavabos en pierre haut de gamme conçus pour compléter les espaces intérieurs sophistiqués avec un profilage de bord précis."
+        },
+        {
+          "title": "Escaliers",
+          "desc": "Des escaliers en pierre aux finitions de précision qui créent une grande déclaration architecturale et une première impression durable."
+        },
+        {
+          "title": "Revêtement mural",
+          "desc": "D'élégants panneaux en pierre naturelle qui ajoutent de la profondeur, de la texture et un caractère raffiné à tout mur intérieur ou extérieur."
+        },
+        {
+          "title": "Solutions de revêtement de sol",
+          "desc": "Des systèmes de revêtement de sol en pierre continus conçus pour les environnements résidentiels et commerciaux avec une finition impeccable."
+        },
+        {
+          "title": "Mobilier sur mesure",
+          "desc": "Des meubles en marbre exclusifs conçus pour les intérieurs de luxe — des tables à manger aux contours de cheminée."
+        }
+      ]
+    },
+    "process": {
+      "label": "Comment Nous Travaillons",
+      "tag": "Notre Processus",
+      "title": "De la Pierre Brute au Chef-d'Œuvre Raffiné",
+      "desc": "Chaque projet suit notre méthodologie méticuleuse en quatre étapes — garantissant précision, transparence et un résultat qui dépasse les attentes.",
+      "steps": [
+        {
+          "title": "Consultation",
+          "desc": "Une séance individuelle pour comprendre en profondeur votre vision, vos besoins fonctionnels et vos préférences esthétiques."
+        },
+        {
+          "title": "Sélection de la pierre",
+          "desc": "Parcourez notre bibliothèque de pierres avec les conseils d'experts pour sélectionner le matériau, la couleur et la finition parfaits."
+        },
+        {
+          "title": "Fabrication sur mesure",
+          "desc": "Nos maîtres artisans découpent, façonnent et finissent avec précision chaque pièce selon vos spécifications exactes dans notre usine."
+        },
+        {
+          "title": "Livraison et Pose",
+          "desc": "Installation sur site impeccable par des spécialistes certifiés, garantissant des joints invisibles et un résultat parfait."
+        }
+      ]
+    },
+    "materials": [
+      "Marbre",
+      "Granit",
+      "Quartzite",
+      "Onyx",
+      "Basalte",
+      "Pierre calcaire",
+      "Quartz",
+      "Céramique",
+      "Terrazzo"
+    ],
+    "faq": {
+      "label": "FAQ",
+      "heading": "Réponses aux questions courantes.",
+      "intro": "Vous avez une question qui n'est pas répertoriée ici ? Notre équipe est toujours prête à vous aider.",
+      "link": "Demandez-nous directement",
+      "items": [
+        {
+          "q": "Quels types de pierres sont disponibles pour les projets sur mesure ?",
+          "a": "Nous proposons une vaste sélection comprenant du marbre, du granit, du quartzite, de l'onyx, du basalte, de la pierre calcaire, ainsi que des surfaces techniques comme le quartz et les plaques de céramique. Notre équipe peut se procurer des pierres spéciales sur demande."
+        },
+        {
+          "q": "Combien de temps dure un projet de fabrication sur mesure ?",
+          "a": "Les délais varient selon la complexité du projet. Les remplacements de plans de travail simples peuvent être réalisés en 2 à 3 semaines, tandis que les installations sur mesure plus importantes comme les escaliers ou les murs d'accent peuvent prendre de 4 à 8 semaines de l'approbation à la pose."
+        },
+        {
+          "q": "Proposez-vous une consultation de conception avant de s'engager ?",
+          "a": "Absolument. Notre consultation de conception est un service gratuit où nos spécialistes de la pierre travaillent avec vous pour explorer les options, examiner les échantillons et créer des dessins détaillés avant que toute fabrication ne commence."
+        },
+        {
+          "q": "Pouvez-vous assortir une pierre existante dans ma maison ?",
+          "a": "Dans la plupart des cas, oui. Nous maintenons un vaste réseau de carrières internationales et de fournisseurs de pierre. Apportez-nous un échantillon ou des photographies haute résolution et notre équipe s'efforcera de trouver la correspondance la plus proche possible."
+        },
+        {
+          "q": "Quels profils de bord sont disponibles pour les plans de travail ?",
+          "a": "Nous proposons une gamme complète de profils de bord — du bord arrondi et biseauté classique aux profils en cascade, en onglet et en doucine. Des profils de bord personnalisés peuvent également être usinés selon vos spécifications exactes."
+        },
+        {
+          "q": "Gérez-vous des projets résidentiels et commerciaux ?",
+          "a": "Oui. Nous servons aussi bien les propriétaires, les architectes d'intérieur, les architectes que les promoteurs commerciaux. Notre capacité de production et nos systèmes de gestion de projet sont conçus pour des projets de toutes envergures."
+        }
+      ]
+    },
+    "cta": {
+      "label": "Prêt à Commencer ?",
+      "heading": "Donnons Vie à Votre Vision en Pierre",
+      "desc": "Parlez avec l'un de nos spécialistes de la pierre aujourd'hui et recevez un devis personnalisé adapté à votre projet — sans engagement, juste de l'expertise.",
+      "btn": "Contactez-nous"
+    }
+  },
+  "projects_page": {
+    "header_badge": "10 000+ PROJETS",
+    "quote_btn": "Demander un devis",
+    "filters": {
+      "All": "Tous",
+      "Residential": "Résidentiel",
+      "Commercial": "Commercial",
+      "Hospitality": "Hôtellerie",
+      "Restoration": "Restauration"
+    },
+    "badges": {
+      "RESIDENTIAL": "RÉSIDENTIEL",
+      "COMMERCIAL": "COMMERCIAL",
+      "HOSPITALITY": "HÔTELLERIE"
+    },
+    "items": [
+      {
+        "title": "Villa Résidentielle",
+        "subtitle": "Sol en marbre sur mesure et escalier"
+      },
+      {
+        "title": "Siège Social d'Entreprise",
+        "subtitle": "Revêtement extérieur en granit et hall d'entrée"
+      },
+      {
+        "title": "Hôtel de Luxe",
+        "subtitle": "Murs d'accent en onyx et meubles-lavabos sur mesure"
+      },
+      {
+        "title": "Résidence Privée",
+        "subtitle": "Plans de travail en quartzite et terrasse extérieure"
+      },
+      {
+        "title": "Boutique",
+        "subtitle": "Revêtement de sol en terrazzo et présentoirs"
+      }
+    ],
+    "cta": {
+      "label": "Démarrez Votre Projet",
+      "heading": "Prêt à Transformer Votre Espace ?",
+      "desc": "Notre équipe est prête à donner vie à votre vision grâce à un savoir-faire haut de gamme en matière de pierre et à une expertise d'installation inégalée.",
+      "btn": "Contactez-nous"
+    }
+  },
+  "contact_page": {
+    "title": "Contactez-nous",
+    "breadcrumb": "Contact",
+    "form": {
+      "label": "Envoyer un message",
+      "heading": "Parlons de votre projet",
+      "success_title": "Message envoyé !",
+      "success_desc": "Merci de nous avoir contactés. Notre équipe vous répondra dans les 24 heures.",
+      "success_btn": "Envoyer un autre message",
+      "name_label": "Nom complet",
+      "name_placeholder": "Jean Dupont",
+      "email_label": "Adresse e-mail",
+      "email_placeholder": "jean@exemple.com",
+      "phone_label": "Numéro de téléphone",
+      "phone_placeholder": "+225 44884422",
+      "subject_label": "Sujet",
+      "subject_default": "Sélectionnez un sujet",
+      "subjects": {
+        "marble": "Fabrication de marbre",
+        "installation": "Pose de pierre",
+        "consultation": "Consultation en conception",
+        "restoration": "Restauration de surface",
+        "other": "Autre demande"
+      },
+      "message_label": "Votre message",
+      "message_placeholder": "Parlez-nous de votre projet — type d'espace, préférences en matière de pierre, calendrier...",
+      "submit_btn": "Envoyer le message"
+    },
+    "side": {
+      "label": "Coordonnées",
+      "heading": "Nous serions ravis d'avoir de vos nouvelles",
+      "desc": "Que vous planifiiez une nouvelle construction, une rénovation ou une restauration — nos spécialistes de la pierre sont prêts à vous guider du concept à la réalisation.",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "address": "Adresse",
+      "address_value": "4 Rue du 7 Decembre,<br/>Abidjan, Côte d’Ivoire"
+    }
+  },
+  "home_page": {
+    "services_section": {
+      "label": "NOS SERVICES",
+      "items": [
+        {
+          "title": "Fourniture",
+          "tags": "Planification, Visualisation 3D, Aménagement paysager, Dessin de structure, CGI, Supervision de construction"
+        },
+        {
+          "title": "Fabrication (découpe et polissage)",
+          "tags": "Design d'intérieur, Design d'extérieur, Rénovation, Design durable, Installation, Plomberie, Expérience 3D"
+        },
+        {
+          "title": "Installation",
+          "tags": "Mobilier sur mesure, Fourniture de matériaux, Boutique en ligne, Distribution, Modélisation 3D"
+        },
+        {
+          "title": "Maintenance",
+          "tags": "Analyse de projet, Dossier d'appel d'offres, Superviseur de construction"
+        }
+      ]
+    },
+    "customization_section": {
+      "label": "Personnalisation",
+      "heading1": "Conçu pour ",
+      "heading2": "Votre Vision",
+      "items": [
+        {
+          "title": "Plans de travail de cuisine",
+          "tag": "Intérieur",
+          "desc": "Des surfaces sur mesure alliant durabilité, fonctionnalité et élégance intemporelle."
+        },
+        {
+          "title": "Plans de toilette",
+          "tag": "Salle de bain",
+          "desc": "Des meubles-lavabos en pierre haut de gamme conçus pour compléter des espaces intérieurs sophistiqués."
+        },
+        {
+          "title": "Escaliers",
+          "tag": "Architecture",
+          "desc": "Des escaliers en pierre aux finitions de précision qui créent une grande déclaration architecturale."
+        },
+        {
+          "title": "Mobilier sur mesure",
+          "tag": "Mobilier",
+          "desc": "Des pièces de mobilier en marbre exclusives conçues pour des intérieurs de luxe distinctifs."
+        },
+        {
+          "title": "Revêtement mural",
+          "tag": "Extérieur",
+          "desc": "D'élégantes applications en pierre naturelle qui ajoutent de la profondeur, de la texture et du caractère."
+        },
+        {
+          "title": "Solutions de revêtement de sol",
+          "tag": "Sol",
+          "desc": "Des systèmes de revêtement de sol sans couture pour les environnements résidentiels et commerciaux."
+        },
+        {
+          "title": "Comptoirs de réception",
+          "tag": "Commercial",
+          "desc": "Des espaces de réception remarquables conçus pour laisser une première impression durable."
+        },
+        {
+          "title": "Tables à manger",
+          "tag": "Mobilier",
+          "desc": "Des tables en pierre fabriquées à la main qui fusionnent fonctionnalité et esthétique raffinée."
+        },
+        {
+          "title": "Murs d'accent",
+          "tag": "Intérieur",
+          "desc": "Des points focaux architecturaux qui célèbrent la beauté des matériaux naturels."
+        },
+        {
+          "title": "Projets sur mesure",
+          "tag": "Sur mesure",
+          "desc": "Des créations en pierre entièrement personnalisées et adaptées aux visions uniques des clients."
+        }
+      ]
+    },
+    "projects_section": {
+      "heading": "Projets en Vedette",
+      "see_all": "Voir Tous les Projets",
+      "filters": {
+        "Featured": "En Vedette",
+        "Architecture": "Architecture",
+        "Interior": "Intérieur",
+        "Landscape": "Paysage",
+        "Furniture": "Mobilier"
+      },
+      "items": [
+        {
+          "title": "Salon Présidentiel",
+          "desc": "Fourniture de pierres de première qualité et installation impeccable pour le salon présidentiel exclusif de l'aéroport."
+        },
+        {
+          "title": "Villa Résidentielle de Luxe",
+          "desc": "Fabrication de marbre haut de gamme et finitions de surface sur mesure pour une résidence privée."
+        }
+      ],
+      "tags": {
+        "Architecture": "Architecture",
+        "Interior": "Intérieur",
+        "Landscape": "Paysage",
+        "Furniture": "Mobilier"
+      }
+    },
+    "marquee_section": {
+      "words": [
+        "Créatif",
+        "Flexible",
+        "Dévoué",
+        "Innovant",
+        "Créatif",
+        "Flexible",
+        "Dévoué",
+        "Innovant"
+      ]
+    }
+  },
+  "misc": {
+    "projects_delivered": "Projets livrés",
+    "projects_delivered_desc": "Des résidences privées aux projets commerciaux et hôteliers à grande échelle.",
+    "years_experience": "Années d'expérience",
+    "years_experience_desc": "Un héritage bâti sur des décennies d'expérience dans l'industrie de la pierre.",
+    "generations": "Générations",
+    "generations_desc": "Trois générations d'expérience familiale avec une vision internationale.",
+    "purpose_direction": "Objectif & Direction",
+    "mission_vision": "Mission & Vision",
+    "our_people": "Notre Équipe",
+    "call_us": "Appelez-nous",
+    "email_us": "Envoyez-nous un email",
+    "visit_us": "Rendez-nous visite",
+    "address_line1": "4 Rue du 7 Decembre",
+    "address_line2": "Abidjan, Côte d’Ivoire",
+    "working_hours": "Heures d'ouverture",
+    "hours_week": "Lun – Sam : 9h00 – 18h00",
+    "hours_sun": "Dimanche : Fermé",
+    "find_us": "Trouvez-nous",
+    "studio_location": "Notre Studio",
+    "studio_name": "Magma Stone Studio",
+    "studio_address_short": "4 Rue du 7 Decembre, Abidjan",
+    "custom_projects_completed_1": "Projets personnalisés",
+    "custom_projects_completed_2": "Réalisés",
+    "years_of": "Années d'",
+    "excellence": "Excellence",
+    "what_we_offer": "Ce que nous offrons",
+    "est_1953": "Créé en 1953",
+    "latest_posts": "Derniers Articles",
+    "products_label": "PRODUITS",
+    "prod_line1": "La nature peint",
+    "prod_line2": "Les meilleurs",
+    "prod_line3": "Chefs-d'œuvre pour nous",
+    "elite_stone": "PIERRE D'ÉLITE",
+    "scroll_reveal": "Faites défiler pour découvrir",
+    "years_craftsmanship": "Années d'artisanat",
+    "industry_awards": "Prix de l'industrie",
+    "blog_page_title": "Actualités & Articles",
+    "blog_page_desc": "Dernières nouvelles de l'entreprise, tendances architecturales, articles sont répertoriés ici.",
+    "page_not_found": "Page Introuvable",
+    "artisans_title": "Les Artisans Derrière Chaque Surface",
+    "artisans_desc": "Notre équipe de maîtres artisans, de spécialistes de la pierre et de consultants en design apporte des décennies d'expertise collective à chaque projet. Nous sommes avant tout des amoureux de la pierre, puis des professionnels.",
+    "get_in_touch": "Contactez-nous"
   }
 }
