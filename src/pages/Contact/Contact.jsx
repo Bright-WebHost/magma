@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { gsap } from '../../utils/gsapConfig';
 import Footer from '../../components/Footer/Footer';
 import styles from './Contact.module.scss';
@@ -6,6 +7,7 @@ import styles from './Contact.module.scss';
 // ─── Component ───────────────────────────────────────────────
 
 const Contact = () => {
+  const { t } = useTranslation();
   const heroRef      = useRef(null);
   const heroInnerRef = useRef(null);
   const infoRef      = useRef(null);
@@ -102,11 +104,11 @@ const Contact = () => {
         <div className="container">
           <div className={styles.heroInner} ref={heroInnerRef}>
             <div className={styles.heroBreadcrumb}>
-              <span>Home</span>
+              <span>{t('navbar.home', 'Home')}</span>
               <span className={styles.sep}>/</span>
-              <span className={styles.active}>Contact</span>
+              <span className={styles.active}>{t('contact_page.breadcrumb')}</span>
             </div>
-            <h1 className={styles.heroTitle}>Get In Touch</h1>
+            <h1 className={styles.heroTitle}>{t('contact_page.title')}</h1>
             {/* <p className={styles.heroSubtitle}>
               Have a project in mind? Our team is ready to listen, advise and deliver.
             </p> */}
@@ -133,9 +135,8 @@ const Contact = () => {
                 </svg>
               </div>
               <div className={styles.infoCardBody}>
-                <span className={styles.infoLabel}>Call Us</span>
-                <a href="tel:+923001234567" className={styles.infoValue}>+92 300 123 4567</a>
-                <a href="tel:+922112345678" className={styles.infoValueSub}>+92 21 1234 5678</a>
+                <span className={styles.infoLabel}>{t('misc.call_us')}</span>
+                <a href="tel:+22544884422" className={styles.infoValue}>+225 44884422</a>
               </div>
             </div> */}
 
@@ -154,7 +155,7 @@ const Contact = () => {
                 </svg>
               </div>
               <div className={styles.infoCardBody}>
-                <span className={styles.infoLabel}>Email Us</span>
+                <span className={styles.infoLabel}>{t('misc.email_us')}</span>
                 <a href="mailto:hello@magmastone.com" className={styles.infoValue}>hello@magmastone.com</a>
                 <a href="mailto:support@magmastone.com" className={styles.infoValueSub}>support@magmastone.com</a>
               </div>
@@ -175,9 +176,9 @@ const Contact = () => {
                 </svg>
               </div>
               <div className={styles.infoCardBody}>
-                <span className={styles.infoLabel}>Visit Us</span>
-                <span className={styles.infoValue}>Plot 14-C, Industrial Area</span>
-                <span className={styles.infoValueSub}>Karachi, Pakistan — 75700</span>
+                <span className={styles.infoLabel}>{t('misc.visit_us')}</span>
+                <span className={styles.infoValue}>{t('misc.address_line1')}</span>
+                <span className={styles.infoValueSub}>{t('misc.address_line2')}</span>
               </div>
             </div> */}
 
@@ -193,9 +194,9 @@ const Contact = () => {
                 </svg>
               </div>
               <div className={styles.infoCardBody}>
-                <span className={styles.infoLabel}>Working Hours</span>
-                <span className={styles.infoValue}>Mon – Sat: 9:00 AM – 6:00 PM</span>
-                <span className={styles.infoValueSub}>Sunday: Closed</span>
+                <span className={styles.infoLabel}>{t('misc.working_hours')}</span>
+                <span className={styles.infoValue}>{t('misc.hours_week')}</span>
+                <span className={styles.infoValueSub}>{t('misc.hours_sun')}</span>
               </div>
             </div> */}
 
@@ -215,11 +216,11 @@ const Contact = () => {
 
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Send a Message</span>
+                <span className={styles.metaLabel}>{t('contact_page.form.label')}</span>
               </div>
 
               <h2 className={styles.formHeading}>
-                Let's Talk About Your Project
+                {t('contact_page.form.heading')}
               </h2>
 
               {submitted ? (
@@ -231,30 +232,30 @@ const Contact = () => {
                         strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <h3>Message Sent!</h3>
-                  <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+                  <h3>{t('contact_page.form.success_title')}</h3>
+                  <p>{t('contact_page.form.success_desc')}</p>
                   <button onClick={() => setSubmitted(false)} className={styles.resetBtn}>
-                    Send Another Message
+                    {t('contact_page.form.success_btn')}
                   </button>
                 </div>
               ) : (
                 <form className={styles.form} onSubmit={handleSubmit} noValidate>
                   <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                      <label htmlFor="name">Full Name <span>*</span></label>
+                      <label htmlFor="name">{t('contact_page.form.name_label')} <span>*</span></label>
                       <input
                         id="name" type="text" name="name"
-                        placeholder="John Doe"
+                        placeholder={t('contact_page.form.name_placeholder')}
                         value={formData.name}
                         onChange={handleChange}
                         required
                       />
                     </div>
                     <div className={styles.formGroup}>
-                      <label htmlFor="email">Email Address <span>*</span></label>
+                      <label htmlFor="email">{t('contact_page.form.email_label')} <span>*</span></label>
                       <input
                         id="email" type="email" name="email"
-                        placeholder="john@example.com"
+                        placeholder={t('contact_page.form.email_placeholder')}
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -264,37 +265,37 @@ const Contact = () => {
 
                   <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                      <label htmlFor="phone">Phone Number</label>
+                      <label htmlFor="phone">{t('contact_page.form.phone_label')}</label>
                       <input
                         id="phone" type="tel" name="phone"
-                        placeholder="+92 300 000 0000"
+                        placeholder={t('contact_page.form.phone_placeholder')}
                         value={formData.phone}
                         onChange={handleChange}
                       />
                     </div>
                     <div className={styles.formGroup}>
-                      <label htmlFor="subject">Subject <span>*</span></label>
+                      <label htmlFor="subject">{t('contact_page.form.subject_label')} <span>*</span></label>
                       <select
                         id="subject" name="subject"
                         value={formData.subject}
                         onChange={handleChange}
                         required
                       >
-                        <option value="" disabled>Select a subject</option>
-                        <option value="marble">Marble Fabrication</option>
-                        <option value="installation">Stone Installation</option>
-                        <option value="consultation">Design Consultation</option>
-                        <option value="restoration">Surface Restoration</option>
-                        <option value="other">Other Enquiry</option>
+                        <option value="" disabled>{t('contact_page.form.subject_default')}</option>
+                        <option value="marble">{t('contact_page.form.subjects.marble')}</option>
+                        <option value="installation">{t('contact_page.form.subjects.installation')}</option>
+                        <option value="consultation">{t('contact_page.form.subjects.consultation')}</option>
+                        <option value="restoration">{t('contact_page.form.subjects.restoration')}</option>
+                        <option value="other">{t('contact_page.form.subjects.other')}</option>
                       </select>
                     </div>
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label htmlFor="message">Your Message <span>*</span></label>
+                    <label htmlFor="message">{t('contact_page.form.message_label')} <span>*</span></label>
                     <textarea
                       id="message" name="message"
-                      placeholder="Tell us about your project — space type, stone preferences, timeline..."
+                      placeholder={t('contact_page.form.message_placeholder')}
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
@@ -310,7 +311,7 @@ const Contact = () => {
                     {submitting ? (
                       <span className={styles.btnSpinner} />
                     ) : (
-                      'Send Message'
+                      t('contact_page.form.submit_btn')
                     )}
                   </button>
                 </form>
@@ -324,16 +325,15 @@ const Contact = () => {
 
                 <div className={styles.sectionMeta}>
                   <span className={styles.metaLine} />
-                  <span className={styles.metaLabel}>Contact Info</span>
+                  <span className={styles.metaLabel}>{t('contact_page.side.label')}</span>
                 </div>
 
                 <h3 className={styles.sidePanelHeading}>
-                  We'd Love to Hear From You
+                  {t('contact_page.side.heading')}
                 </h3>
 
                 <p className={styles.sidePanelDesc}>
-                  Whether you're planning a new build, renovation or restoration — our
-                  stone specialists are ready to guide you from concept to completion.
+                  {t('contact_page.side.desc')}
                 </p>
 
                 <ul className={styles.sideContactList}>
@@ -345,8 +345,8 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <span className={styles.sideContactLabel}>Phone</span>
-                      <a href="tel:+923001234567" className={styles.sideContactValue}>+92 300 123 4567</a>
+                      <span className={styles.sideContactLabel}>{t('contact_page.side.phone')}</span>
+                      <a href="tel:+22544884422" className={styles.sideContactValue}>+225 44884422</a>
                     </div>
                   </li>
                   <li>
@@ -359,7 +359,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <span className={styles.sideContactLabel}>Email</span>
+                      <span className={styles.sideContactLabel}>{t('contact_page.side.email')}</span>
                       <a href="mailto:hello@magmastone.com" className={styles.sideContactValue}>hello@magmastone.com</a>
                     </div>
                   </li>
@@ -373,8 +373,8 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <span className={styles.sideContactLabel}>Address</span>
-                      <span className={styles.sideContactValue}>Plot 14-C, Industrial Area,<br/>Karachi, Pakistan 75700</span>
+                      <span className={styles.sideContactLabel}>{t('contact_page.side.address')}</span>
+                      <span className={styles.sideContactValue} dangerouslySetInnerHTML={{ __html: t('contact_page.side.address_value') }}></span>
                     </div>
                   </li>
                 </ul>
@@ -397,7 +397,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="1.5"/>
                     </svg>
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.facebook.com/magmazco/" target="_blank" rel="noopener noreferrer"
                     aria-label="Facebook" className={styles.socialLink}>
                     <svg viewBox="0 0 24 24" fill="none">
                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
@@ -429,9 +429,9 @@ const Contact = () => {
             <div className={styles.mapHeaderInner}>
               <div className={styles.sectionMeta}>
                 <span className={styles.metaLine} />
-                <span className={styles.metaLabel}>Find Us</span>
+                <span className={styles.metaLabel}>{t('misc.find_us')}</span>
               </div>
-              <h2 className={styles.mapHeading}>Our Studio Location</h2>
+              <h2 className={styles.mapHeading}>{t('misc.studio_location')}</h2>
             </div>
           </div>
         </div> */}
@@ -439,13 +439,13 @@ const Contact = () => {
         <div className={styles.mapFrame}>
           <iframe
             title="Magma Stone Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.062!2d67.0099!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.2398068893194!2d-3.9799325244344277!3d5.283078722682465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ef0106777d99%3A0xc4ce54bf00b2323a!2sMAGMA!5e1!3m2!1sen!2sin!4v1787213817615!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
           {/* Map overlay card */}
           {/* <div className={styles.mapOverlayCard}>
@@ -458,8 +458,8 @@ const Contact = () => {
               </svg>
             </div>
             <div>
-              <p className={styles.mapCardTitle}>Magma Stone Studio</p>
-              <p className={styles.mapCardAddr}>Plot 14-C, Industrial Area, Karachi</p>
+              <p className={styles.mapCardTitle}>{t('misc.studio_name')}</p>
+              <p className={styles.mapCardAddr}>{t('misc.studio_address_short')}</p>
             </div>
           </div> */}
         </div>

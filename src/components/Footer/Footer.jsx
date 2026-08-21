@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
+import logo from '../../assets/images/img/logo.png';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -11,25 +15,15 @@ const Footer = () => {
           {/* Column 1: Logo + Description */}
           <div className={styles.col}>
             <div className={styles.footerLogo}>
-              <div className={styles.logoIcon}>
-                <svg viewBox="0 0 100 100" width="32" height="32">
-                  <path
-                    d="M10 10 H90 V90 H10 Z M30 30 V70 H70 V50 H50 V30 Z"
-                    fillRule="evenodd"
-                    fill="#ffffff"
-                  />
-                </svg>
-              </div>
-              <div className={styles.logoText}>
-                <span>MAGMA</span>
-                <span>co.</span>
-              </div>
+              <Link to="/">
+                <img src={logo} alt="Magma Logo" style={{ height: '40px', width: 'auto' }} />
+              </Link>
             </div>
             <p className={styles.footerDesc}>
-              A heritage built over more than 70 years of experience in the stone industry, bringing nature's finest materials to your spaces.
+              {t('footer.desc')}
             </p>
             <div className={styles.socials}>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href="https://www.facebook.com/magmazco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebookF />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -46,50 +40,42 @@ const Footer = () => {
 
           {/* Column 2: Services */}
           <div className={styles.col}>
-            <h4 className={styles.colTitle}>Services</h4>
+            <h4 className={styles.colTitle}>{t('footer.services_title')}</h4>
             <ul className={styles.footerLinks}>
-              <li><Link to="/services">Marble Fabrication</Link></li>
-              <li><Link to="/services">Stone Installation</Link></li>
-              <li><Link to="/customization">Customization</Link></li>
-              <li><Link to="/services">Surface Restoration</Link></li>
+              <li><Link to="/services">{t('footer.marble_fabrication')}</Link></li>
+              <li><Link to="/services">{t('footer.stone_installation')}</Link></li>
+              <li><Link to="/customization">{t('footer.customization')}</Link></li>
+              <li><Link to="/services">{t('footer.surface_restoration')}</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Studio */}
+          {/* Column 3: Quick Links */}
           <div className={styles.col}>
-            <h4 className={styles.colTitle}>Quick Links</h4>
+            <h4 className={styles.colTitle}>{t('footer.quick_links')}</h4>
             <ul className={styles.footerLinks}>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/products">Products</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/about">{t('navbar.about')}</Link></li>
+              <li><Link to="/products">{t('navbar.products')}</Link></li>
+              <li><Link to="/projects">{t('navbar.projects')}</Link></li>
+              <li><Link to="/contact">{t('navbar.contact')}</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Newsletter */}
+          {/* Column 4: Contact Info */}
           <div className={styles.col}>
-            <h4 className={styles.colTitle}>Newsletter</h4>
-            <p className={styles.newsletterText}>
-              Subscribe to receive our latest updates and news.
-            </p>
-            <form className={styles.newsletterForm} onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Your email address"
-                className={styles.emailInput}
-                aria-label="Email for newsletter"
-              />
-              <button type="submit" className={styles.submitBtn}>
-                →
-              </button>
-            </form>
+            <h4 className={styles.colTitle}>{t('footer.contact_title')}</h4>
+            <ul className={styles.footerLinks}>
+              <li><span style={{ color: 'rgba(255, 255, 255, 0.55)', fontSize: '13px', lineHeight: '1.6', display: 'inline-block' }}>{t('footer.address')}</span></li>
+              <li><a href="tel:+22544884422">{t('footer.phone')}</a></li>
+              <li><a href="mailto:hello@magmastone.com">{t('footer.email')}</a></li>
+            </ul>
           </div>
+
         </div>
 
         {/* Footer Bottom */}
         <div className={styles.footerBottom}>
           <p className={styles.copyright}>
-            © {new Date().getFullYear()} MAGMA Stone. All rights reserved.
+            © {new Date().getFullYear()} {t('footer.copyright')}
           </p>
           {/* <div className={styles.bottomLinks}>
             <Link to="/">Privacy Policy</Link>
