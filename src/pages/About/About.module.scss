@@ -731,9 +731,6 @@
   @media (max-width: $breakpoint-md) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: $breakpoint-sm) {
-    grid-template-columns: 1fr;
-  }
 }
 
 .valueCard {
@@ -774,15 +771,6 @@
     }
     &:nth-child(n + 3) {
       border-top: 1px solid rgba($color-dark, 0.1);
-    }
-  }
-  @media (max-width: $breakpoint-sm) {
-    border-right: none !important;
-    border-top: none !important;
-    border-bottom: 1px solid rgba($color-dark, 0.1);
-
-    &:last-child {
-      border-bottom: none;
     }
   }
 }
