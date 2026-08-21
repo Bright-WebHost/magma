@@ -26,14 +26,8 @@ const Footer = () => {
               <a href="https://www.facebook.com/profile.php?id=61591578427858" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebookF />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FaTwitter />
-              </a>
               <a href="https://www.instagram.com/magmastoneco/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <FaLinkedinIn />
               </a>
             </div>
           </div>
