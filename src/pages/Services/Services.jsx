@@ -118,8 +118,9 @@ const Services = () => {
 
       // ── Bento grid items
       if (bentoRef.current) {
+        const bentoSelector = styles.bentoItem.split(' ').map(c => `.${CSS.escape(c)}`).join('');
         gsap.fromTo(
-          bentoRef.current.querySelectorAll(`.${styles.bentoItem}`),
+          bentoRef.current.querySelectorAll(bentoSelector),
           { opacity: 0, y: 40 },
           {
             opacity: 1, y: 0, duration: 0.85, stagger: 0.1, ease: 'power3.out',
